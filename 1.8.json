@@ -53,6 +53,7 @@
     },
     "NBTTagList": {
       "name": "fv",
+      "name": "fv",
       "methods": {
         "a(Lgd;)V": "appendTag",
         "c()I": "tagCount",
@@ -342,7 +343,8 @@
         "a(Lid;)V": "sendPacket",
         "a(Lml;)V": "processPlayerDigging",
         "a(Lma;)V": "processClickWindow",
-        "a(Lmv;)V": "processAnimation"
+        "a(Lmv;)V": "processAnimation",
+        "a(DDDFF)V": "setPlayerLocation"
       },
       "fields": {
         "b": "playerEntity"
@@ -702,7 +704,8 @@
         "d()Lbrw;": "getPositionVector",
         "e()Laqu;": "getEntityWorld",
         "f()Lwv;": "getCommandSenderEntity",
-        "t_()Z": "sendCommandFeedback"
+        "t_()Z": "sendCommandFeedback",
+        "a(DDDFF)V": "setPositionAndRotation"
       },
       "fields": {
         "s": "posX",
