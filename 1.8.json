@@ -51,17 +51,6 @@
         "d": "fileWhitelist"
       }
     },
-    "NBTTagList": {
-      "name": "fv",
-      "name": "fv",
-      "methods": {
-        "a(Lgd;)V": "appendTag",
-        "c()I": "tagCount",
-        "f(I)Ljava/lang/String;": "getStringTagAt"
-      },
-      "fields": {
-      }
-    },
     "S23PacketBlockChange": {
       "name": "iw",
       "methods": {
@@ -157,17 +146,6 @@
       "fields": {
         "b": "thisPlayerMP",
         "a": "theWorld"
-      }
-    },
-    "NBTTagCompound": {
-      "name": "fn",
-      "methods": {
-        "b(Ljava/lang/String;I)Z": "hasKey",
-        "m(Ljava/lang/String;)Lfn;": "getCompoundTag",
-        "c(Ljava/lang/String;I)Lfv;": "getTagList",
-        "a(Ljava/lang/String;Lgd;)V": "setTag"
-      },
-      "fields": {
       }
     },
     "Vec3": {
@@ -371,11 +349,6 @@
         "c": "z"
       }
     },
-    "NBTTagString": {
-      "name": "gc",
-      "methods": {},
-      "fields": {}
-    },
     "PotionEffect": {
       "name": "wq",
       "methods": {},
@@ -516,11 +489,6 @@
         "A": "difficultyLocked",
         "h": "time"
       }
-    },
-    "NBTBase": {
-      "name": "gd",
-      "methods": {},
-      "fields": {}
     },
     "EnumFacing": {
       "name": "ej",
@@ -859,7 +827,8 @@
         "a(Lvx;)Z": "canOpen",
         "t_()Z": "sendCommandFeedback",
         "d(ILamj;)Z": "replaceItemInInventory",
-        "b(Lho;)V": "addChatComponentMessage"
+        "b(Lho;)V": "addChatComponentMessage",
+        "a(Lamj;I)V": "setItemInUse"
       },
       "fields": {
         "bi": "openContainer",
@@ -912,6 +881,95 @@
       "name": "aha",
       "fields": {
         "d": "isCreativeMode"
+      }
+    },
+    "NBTBase": {
+      "name": "gd"
+    }
+    "NBTTagByte": {
+      "name": "fm",
+      "fields": {
+        "b": "data"
+      }
+    }
+    "NBTTagByteArray": {
+      "name": "fl",
+      "fields": {
+        "b": "data"
+      }
+    }
+    "NBTTagCompound": {
+      "name": "fn",
+      "methods": {
+        "b(Ljava/lang/String;I)Z": "hasKey",
+        "m(Ljava/lang/String;)Lfn;": "getCompoundTag",
+        "c(Ljava/lang/String;I)Lfv;": "getTagList",
+        "a(Ljava/lang/String;B)V": "setByte",
+        "a(Ljava/lang/String;[B)V": "setByteArray",
+        "a(Ljava/lang/String;D)V": "setDouble",
+        "a(Ljava/lang/String;F)V": "setFloat",
+        "a(Ljava/lang/String;I)V": "setInteger",
+        "a(Ljava/lang/String;[I)V": "setIntArray",
+        "a(Ljava/lang/String;J")V: "setLong",
+        "a(Ljava/lang/String;S")V: "setShort",
+        "a(Ljava/lang/String;Ljava/lang/String;)V": "setString",
+        "a(Ljava/lang/String;Lgd;)V": "setTag"
+      },
+      "fields": {
+        "c": "tagMap"
+      }
+    },
+    "NBTTagDouble" {
+      "name": "fq",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagFloat" {
+      "name": "fs",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagInt" {
+      "name": "fu",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagIntArray" {
+      "name": "ft",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagList": {
+      "name": "fv",
+      "methods": {
+        "a(Lgd;)V": "appendTag",
+        "c()I": "tagCount",
+        "f(I)Ljava/lang/String;": "getStringTagAt"
+      },
+      "fields": {
+        "c": "tagList"
+      }
+    },
+    "NBTTagLong" {
+      "name": "fw",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagShort" {
+      "name": "gb",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagString": {
+      "name": "gc",
+      "fields": {
+        "b": "data"
       }
     }
   }
