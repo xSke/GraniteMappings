@@ -322,6 +322,7 @@
         "a(Lml;)V": "processPlayerDigging",
         "a(Lma;)V": "processClickWindow",
         "a(Lmv;)V": "processAnimation",
+        "a(Llu;)V": "processChatMessage",
         "a(DDDFF)V": "setPlayerLocation"
       },
       "fields": {
@@ -885,19 +886,19 @@
     },
     "NBTBase": {
       "name": "gd"
-    }
+    },
     "NBTTagByte": {
       "name": "fm",
       "fields": {
         "b": "data"
       }
-    }
+    },
     "NBTTagByteArray": {
       "name": "fl",
       "fields": {
         "b": "data"
       }
-    }
+    },
     "NBTTagCompound": {
       "name": "fn",
       "methods": {
@@ -910,8 +911,8 @@
         "a(Ljava/lang/String;F)V": "setFloat",
         "a(Ljava/lang/String;I)V": "setInteger",
         "a(Ljava/lang/String;[I)V": "setIntArray",
-        "a(Ljava/lang/String;J")V: "setLong",
-        "a(Ljava/lang/String;S")V: "setShort",
+        "a(Ljava/lang/String;J)V": "setLong",
+        "a(Ljava/lang/String;S)V": "setShort",
         "a(Ljava/lang/String;Ljava/lang/String;)V": "setString",
         "a(Ljava/lang/String;Lgd;)V": "setTag"
       },
@@ -919,25 +920,25 @@
         "c": "tagMap"
       }
     },
-    "NBTTagDouble" {
+    "NBTTagDouble": {
       "name": "fq",
       "fields": {
         "b": "data"
       }
     },
-    "NBTTagFloat" {
+    "NBTTagFloat": {
       "name": "fs",
       "fields": {
         "b": "data"
       }
     },
-    "NBTTagInt" {
+    "NBTTagInt": {
       "name": "fu",
       "fields": {
         "b": "data"
       }
     },
-    "NBTTagIntArray" {
+    "NBTTagIntArray": {
       "name": "ft",
       "fields": {
         "b": "data"
@@ -954,13 +955,13 @@
         "c": "tagList"
       }
     },
-    "NBTTagLong" {
+    "NBTTagLong": {
       "name": "fw",
       "fields": {
         "b": "data"
       }
     },
-    "NBTTagShort" {
+    "NBTTagShort": {
       "name": "gb",
       "fields": {
         "b": "data"
@@ -971,6 +972,13 @@
       "fields": {
         "b": "data"
       }
+    },
+    "C01PacketChatMessage": {
+      "name": "lu",
+      "fields": {
+        "a": "message"
+      }
     }
   }
 }
+
