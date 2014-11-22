@@ -83,7 +83,10 @@
         "a(Latr;)I": "getIdFromBlock",
         "f(Laqu;Ldt;)Z": "isReplaceable",
         "a(Lbec;Ljava/util/Random;I)Lalq;": "getItemDropped",
-        "a(Laqu;Ldt;Lej;FFFILxm;)Lbec;": "onBlockPlaced"
+        "a(Laqu;Ldt;Lej;FFFILxm;)Lbec;": "onBlockPlaced",
+        "a(I)Lbec;": "getStateFromMeta",
+        "c(Lbec;)I": "getMetaFromState",
+        "P()Lbec;": "getDefaultState"
       },
       "fields": {
         "L": "blockMetadata",
@@ -978,7 +981,12 @@
       "fields": {
         "a": "message"
       }
+    },
+    "JsonToNBT": {
+      "name": "gg",
+      "methods": {
+        "a(Ljava/lang/String;)Lfn;": "func_180713_a"
+      }
     }
   }
 }
-
