@@ -815,7 +815,6 @@
         "a(Ldt;Lej;Lamj;)Z": "canPlayerEdit",
         "b(Lahd;)I": "getExperiencePoints",
         "d_()Ljava/lang/String;": "getName",
-        "p()Z": "getEquipmentInSlot",
         "bz()Lamj;": "getHeldItem",
         "c(ILamj;)V": "setCurrentItemOrArmor",
         "v()Z": "isSpectator",
