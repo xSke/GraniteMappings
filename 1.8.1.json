@@ -1,0 +1,943 @@
+{
+  "classes": {
+    "IStringSerializable": {
+      "name": "vc",
+      "methods": {
+        "l()Ljava/lang/String;": "getName"
+      },
+      "fields": {
+      }
+    },
+    "Item": {
+      "name": "aln",
+      "methods": {
+        "a(I)I": "getMetadata",
+        "d(Ljava/lang/String;)Laln;": "getItemFromName",
+        "a(Lamg;)Ljava/lang/String;": "getItemStackDisplayName",
+        "a(Lato;)Laln;": "getItemFromBlock",
+        "b(Laln;)I": "getIdFromItem"
+      },
+      "fields": {
+        "e": "itemRegistry",
+        "h": "maxStackSize",
+        "c": "maxDamage"
+      }
+    },
+    "GameProfile": {
+      "name": "com.mojang.authlib.GameProfile",
+      "methods": {
+      },
+      "fields": {
+      }
+    },
+    "MinecraftServer": {
+      "name": "net.minecraft.server.MinecraftServer",
+      "methods": {
+        "a(Lsp;)V": "setConfigManager",
+        "z()V": "tick",
+        "a(Laqr;Ldt;Laha;)Z": "isBlockProtected",
+        "C()V": "startServerThread",
+        "a(I)Lqu;": "worldServerForDimension",
+        "i()Z": "startServer",
+        "x()Ljava/io/File;": "getDataDirectory"
+      },
+      "fields": {
+        "v": "configurationManager",
+        "k": "logger",
+        "aa": "serverThread",
+        "b": "commandManager",
+        "a": "fileBannedPlayers",
+        "c": "fileBannedIPs",
+        "d": "fileWhitelist"
+      }
+    },
+    "S23PacketBlockChange": {
+      "name": "ix",
+      "methods": {
+      },
+      "fields": {
+        "b": "field_148883_d"
+      }
+    },
+    "IProperty": {
+      "name": "bev",
+      "methods": {
+        "a()Ljava/lang/String;": "getName",
+        "c()Ljava/util/Collection;": "getValues"
+      },
+      "fields": {
+      }
+    },
+    "ChatComponentText": {
+      "name": "hz",
+      "methods": {
+      },
+      "fields": {
+        "b": "text"
+      }
+    },
+    "Block": {
+      "name": "ato",
+      "methods": {
+        "i(Lbea;)Lamg;": "createStackedBlock",
+        "a(Lato;)I": "getIdFromBlock",
+        "a(Laqr;Ldt;)Z": "isReplaceable",
+        "a(Lbea;Ljava/util/Random;I)Laln;": "getItemDropped",
+        "a(Laqr;Ldt;Lej;FFFILxo;)Lbea;": "onBlockPlaced",
+        "a(I)Lbea;": "getStateFromMeta",
+        "c(Lbea;)I": "getMetaFromState",
+        "P()Lbea;": "getDefaultState"
+      },
+      "fields": {
+        "M": "blockMetadata",
+        "c": "blockRegistry",
+        "u": "lightValue",
+        "x": "blockResistance",
+        "t": "canBlockGrass",
+        "s": "lightOpacity",
+        "O": "unlocalizedName",
+        "L": "slipperiness",
+        "N": "blockWithMetadata",
+        "w": "blockHardness"
+      }
+    },
+    "RegistryNamespaced": {
+      "name": "ev",
+      "methods": {
+        "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject"
+      },
+      "fields": {
+      }
+    },
+    "ThreadQuickExitException": {
+      "name": "pj",
+      "methods": {
+      },
+      "fields": {
+      }
+    },
+    "DedicatedServer": {
+      "name": "pp",
+      "methods": {
+      },
+      "fields": {
+      }
+    },
+    "BlockState": {
+      "name": "beb",
+      "methods": {
+      },
+      "fields": {
+        "d": "options",
+        "e": "variants"
+      }
+    },
+    "DedicatedPlayerList": {
+      "name": "po",
+      "methods": {
+      },
+      "fields": {
+      }
+    },
+    "ItemInWorldManager": {
+      "name": "qy",
+      "methods": {
+        "b(Ldt;)Z": "tryHarvestBlock",
+        "a(Laha;Laqr;Lamg;)Z": "tryUseItem",
+        "a(Laha;Laqr;Lamg;Ldt;Lej;FFF)Z": "activateBlockOrUseItem"
+      },
+      "fields": {
+        "b": "thisPlayerMP",
+        "a": "theWorld"
+      }
+    },
+    "Vec3": {
+      "name": "bru",
+      "methods": {
+      },
+      "fields": {
+        "b": "yCoord",
+        "a": "xCoord",
+        "c": "zCoord"
+      }
+    },
+    "Packet": {
+      "name": "ie",
+      "methods": {
+      },
+      "fields": {
+      }
+    },
+    "EntityArmorStand": {
+      "name": "adj",
+      "methods": {
+        "aW()Z": "isInvisible",
+        "e(Z)V": "setInvisible",
+        "C()V": "dropBlock",
+        "d(Lfa;)V": "setRightArmRotation",
+        "A()V": "playParticles",
+        "b(Lfa;)V": "setBodyRotation",
+        "k(Z)V": "setShowArms",
+        "r()Z": "hasNoBasePlate",
+        "a(Lfa;)V": "setHeadRotation",
+        "D()V": "dropContents",
+        "c(Lfa;)V": "setLeftArmRotation",
+        "f(Lfa;)V": "setRightLegRotation",
+        "p()Z": "hasNoGravity",
+        "l(Z)V": "setNoBasePlate",
+        "q()Z": "getShowArms",
+        "a(Z)V": "setSmall",
+        "j(Z)V": "setNoGravity",
+        "e(Lfa;)V": "setLeftLegRotation"
+      },
+      "fields": {
+        "bm": "leftArmRotation",
+        "bp": "rightLegRotation",
+        "bk": "headRotation",
+        "bl": "bodyRotation",
+        "bo": "leftLegRotation",
+        "bn": "rightArmRotation"
+      }
+    },
+    "BlockState$StateImplementation": {
+      "name": "bee",
+      "methods": {
+        "b(Lbev;)Ljava/lang/Comparable;": "getValue",
+        "c()Lato;": "getBlock",
+        "a(Lbev;Ljava/lang/Comparable;)Lbea;": "setValue"
+      },
+      "fields": {
+        "b": "values"
+      }
+    },
+    "PlayerSelector": {
+      "name": "ah",
+      "methods": {
+        "b(Lae;Ljava/lang/String;Ljava/lang/Class;)Ljava/util/List;": "matchPlayers"
+      },
+      "fields": {
+      }
+    },
+    "C08PacketPlayerBlockPlacement": {
+      "name": "my",
+      "methods": {
+        "a()Ldt;": "getPosition"
+      },
+      "fields": {
+      }
+    },
+    "PropertyEnum": {
+      "name": "bet",
+      "methods": {
+      },
+      "fields": {
+        "b": "valuesMap"
+      }
+    },
+    "ICommandSender": {
+      "name": "ae",
+      "methods": {
+        "e_()Ljava/lang/String;": "getName"
+      },
+      "fields": {
+      }
+    },
+    "ThreadServerShutdown": {
+      "name": "pe",
+      "methods": {},
+      "fields": {}
+    },
+    "Potion": {
+      "name": "wr",
+      "methods": {
+      },
+      "fields": {}
+    },
+    "EntityItem": {
+      "name": "adx",
+      "methods": {
+        "a(Lamg;)V": "setEntityItemStack",
+        "a(I)V": "setPickupDelay",
+        "b(Ljava/lang/String;)V": "setOwner",
+        "n()Ljava/lang/String;": "getThrower",
+        "c(Ljava/lang/String;)V": "setThrower",
+        "p()V": "setDefaultPickupDelay",
+        "j()V": "setAgeToCreativeDespawnTime",
+        "l()Lamg;": "getEntityItem",
+        "s()Z": "canPickUp",
+        "q()V": "setNoPickupDelay",
+        "r()V": "setInfinitePickupDelay"
+      },
+      "fields": {}
+    },
+    "IBlockWithMetadata": {
+      "name": "bea",
+      "methods": {},
+      "fields": {}
+    },
+    "CommandHandler": {
+      "name": "ab",
+      "methods": {
+        "a(Lae;Ljava/lang/String;)I": "executeCommand"
+      },
+      "fields": {}
+    },
+    "BlockPos": {
+      "name": "dt",
+      "methods": {},
+      "fields": {}
+    },
+    "Vec3i": {
+      "name": "fd",
+      "methods": {
+        "n()I": "getX",
+        "o()I": "getY",
+        "p()I": "getZ"
+      },
+      "fields": {
+      }
+    },
+    "ServerConfigurationManager": {
+      "name": "sp",
+      "methods": {
+        "a(Lgr;Lqx;)V": "initializeConnectionToPlayer",
+        "f(Lcom/mojang/authlib/GameProfile;)Lqx;": "func_148545_a",
+        "e(Lqx;)V": "playerLoggedOut"
+      },
+      "fields": {
+        "i": "playerEntityList"
+      }
+    },
+    "Bootstrap": {
+      "name": "oe",
+      "methods": {
+        "c()V": "func_151354_b"
+      },
+      "fields": {
+      }
+    },
+    "NetHandlerPlayServer": {
+      "name": "rl",
+      "methods": {
+        "a(Lhp;)V": "onDisconnect",
+        "a(Lmy;)V": "processPlayerBlockPlacement",
+        "a(Lie;)V": "sendPacket",
+        "a(Lmm;)V": "processPlayerDigging",
+        "a(Lma;)V": "processClickWindow",
+        "a(Lmw;)V": "processAnimation",
+        "a(Llv;)V": "processChatMessage",
+        "a(DDDFF)V": "setPlayerLocation"
+      },
+      "fields": {
+        "b": "playerEntity"
+      }
+    },
+    "C07PacketPlayerDigging": {
+      "name": "mm",
+      "methods": {
+        "a()Ldt;": "getPosition"
+      },
+      "fields": {}
+    },
+    "NetworkManager": {
+      "name": "gr",
+      "methods": {},
+      "fields": {}
+    },
+    "Rotations": {
+      "name": "fa",
+      "methods": {},
+      "fields": {
+        "a": "x",
+        "b": "y",
+        "c": "z"
+      }
+    },
+    "PotionEffect": {
+      "name": "ws",
+      "methods": {},
+      "fields": {}
+    },
+    "ItemStack": {
+      "name": "amg",
+      "methods": {
+        "s()Z": "hasDisplayName",
+        "q()Ljava/lang/String;": "getDisplayName",
+        "c(Ljava/lang/String;)Lamg;": "setStackDisplayName",
+        "r()V": "clearCustomName",
+        "b()Laln;": "getItem",
+        "d(Lfn;)V": "setTagCompound",
+        "i()I": "getItemDamage",
+        "o()Lfn;": "getTagCompound",
+        "b(I)V": "setItemDamage"
+      },
+      "fields": {
+        "b": "stackSize"
+      }
+    },
+    "MovingObjectPosition": {
+      "name": "brs",
+      "methods": {
+      },
+      "fields": {
+        "e": "blockPos",
+        "b": "field_178784_b",
+        "a": "typeOfHit"
+      }
+    },
+    "World": {
+      "name": "aqr",
+      "methods": {
+        "p(Ldt;)Lbea;": "getBlock",
+        "a(Ldt;Lbea;)Z": "setBlock",
+        "a(Lbru;Lbru;Z)Lbrs;": "rayTraceBlocks",
+        "P()Lbqm;": "getWorldInfo"
+      },
+      "fields": {}
+    },
+    "WorldInfo": {
+      "name": "bqm",
+      "methods": {
+        "u()Larb;": "getWorldGenerator",
+        "c(D)V": "setBorderCenterZ",
+        "d(D)V": "setBorderCenterX",
+        "e(D)V": "setBorderSafeZone",
+        "k(I)V": "setBorderWarningTime",
+        "F()J": "getBorderSizeLerpTime",
+        "f(I)V": "setThunderDuration",
+        "x()Laqn;": "getGameRules",
+        "a(Ldt;)V": "setSpawn",
+        "g(Z)V": "setHardcore",
+        "B()Ljava/lang/String;": "getGeneratorOptions",
+        "d()I": "getSpawnY",
+        "D()D": "getBorderCenterZ",
+        "e()I": "getSpawnZ",
+        "C()D": "getBorderCenterX",
+        "c()I": "getSpawnX",
+        "b(J)V": "setTime",
+        "H()D": "getBorderSafeZone",
+        "e(I)V": "setVersion",
+        "r()Laqz;": "getGameType",
+        "a(Larb;)V": "setWorldGenerator",
+        "e(J)V": "setBorderSizeLerpTime",
+        "f(D)V": "setBorderDamagePerBlock",
+        "v()Z": "getAllowCommands",
+        "a(Z)V": "setThundering",
+        "p()Z": "isRaining",
+        "g()J": "getDayTime",
+        "c(J)V": "setDayTime",
+        "E()D": "getBorderSize",
+        "f()J": "getTime",
+        "f(Z)V": "setUseMapFeatures",
+        "w()Z": "isInitialized",
+        "b(Z)V": "setRaining",
+        "k()Ljava/lang/String;": "getLevelName",
+        "a(Lvv;)V": "setDifficulty",
+        "c(Z)V": "setAllowCommands",
+        "a(Laqz;)V": "setGameType",
+        "e(Z)V": "setDifficultyLocked",
+        "s()Z": "getUseMapFeatures",
+        "J()I": "getBorderWarningBlocks",
+        "b(D)V": "setBorderSizeLerpTarget",
+        "K()I": "getBorderWarningTime",
+        "d(Z)V": "setInitialized",
+        "l()I": "getVersion",
+        "b()J": "getSeed",
+        "o()I": "getThunderDuration",
+        "q()I": "getRainDuration",
+        "a(D)V": "setBorderSize",
+        "G()D": "getBorderSizeLerpTarget",
+        "a(Ljava/lang/String;)V": "setLevelName",
+        "I()D": "getBorderDamagePerBlock",
+        "z()Z": "getDifficultyLocked",
+        "g(I)V": "setRainDuration",
+        "j(I)V": "setBorderWarningBlocks",
+        "t()Z": "isHardcore",
+        "n()Z": "isThundering",
+        "y()Lvv;": "getDifficulty"
+      },
+      "fields": {
+      }
+    },
+    "EnumFacing": {
+      "name": "ej",
+      "methods": {},
+      "fields": {}
+    },
+    "InventoryPlayer": {
+      "name": "agy",
+      "methods": {
+        "j()I": "getFirstEmptyStack",
+        "h()Lamg;": "getCurrentItem",
+        "a(Lamg;)Z": "addItemStackToInventory"
+      },
+      "fields": {
+        "c": "currentItem",
+        "d": "player",
+        "f": "itemStack"
+      }
+    },
+    "DamageSource": {
+      "name": "wj",
+      "methods": {},
+      "fields": {}
+    },
+    "ServerCommandManager": {
+      "name": "cl",
+      "methods": {},
+      "fields": {}
+    },
+    "IChatComponent": {
+      "name": "hp",
+      "methods": {
+        "a(Lhp;)Lhp;": "appendSibling",
+        "a(Ljava/lang/String;)Lhp;": "appendText",
+        "e()Ljava/lang/String;": "getUnformattedTextForChat"
+      },
+      "fields": {}
+    },
+    "IInventory": {
+      "name": "vs",
+      "methods": {
+        "o_()I": "getSizeInventory",
+        "a(I)Lamg;": "getStackInSlot",
+        "a(ILamg;)V": "setInventorySlotContents"
+      },
+      "fields": {}
+    },
+    "ChatComponentTranslation": {
+      "name": "ia",
+      "methods": {},
+      "fields": {
+        "e": "formatArgs",
+        "d": "key"
+      }
+    },
+    "ItemBlock": {
+      "name": "ajr",
+      "methods": {
+        "d()Lato;": "getBlock"
+      },
+      "fields": {}
+    },
+    "WorldType": {
+      "name": "arb",
+      "fields": {
+        "b": "DEFAULT"
+      }
+    },
+    "StringTranslate": {
+      "name": "fj",
+      "methods": {
+        "a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;": "translateKeyFormat",
+        "a()Lfj;": "getInstance"
+      }
+    },
+    "EnumDifficulty": {
+      "name": "vv"
+    },
+    "WorldSettings$GameType": {
+      "name": "aqz"
+    },
+    "IChatComponent$Serializer": {
+      "name": "hq",
+      "methods": {
+        "a(Ljava/lang/String;)Lhp;": "jsonToComponent"
+      }
+    },
+    "InventoryBasic": {
+      "name": "wc"
+    },
+    "Entity": {
+      "name": "wx",
+      "methods": {
+        "F()I": "getEntityID",
+        "J()V": "setDead",
+        "a(FF)V": "setSize",
+        "b(FF)V": "setRotation",
+        "L()I": "getMaxInPortalTime",
+        "M()V": "setOnFireFromLava",
+        "e(I)V": "setFire",
+        "N()V": "extinguish",
+        "O()V": "kill",
+        "P()Ljava/lang/String;": "getSwimSound",
+        "a(Ljava/lang/String;FF)V": "playSound",
+        "R()Z": "isSilent",
+        "f(I)V": "dealFireDamage",
+        "T()Z": "isImmuneToFire",
+        "e(FF)V": "fall",
+        "U()Z": "isWet",
+        "V()Z": "isInWater",
+        "Z()V": "createRunningParticles",
+        "aa()Ljava/lang/String;": "getSplashSound",
+        "ab()Z": "isInLava",
+        "a(FFF)V": "moveFlying",
+        "a(Laqr;)V": "setWorld",
+        "g(Lwx;)F": "getDistanceToEntity",
+        "e(DDD)D": "getDistanceSq",
+        "c(Ldt;)D": "getDistanceSqToCenter",
+        "f(DDD)D": "getDistance",
+        "h(Lwx;)D": "getDistanceSqToEntity",
+        "g(DDD)V": "addVelocity",
+        "ac()V": "setBeenAttacked",
+        "a(Lwj;F)Z": "attackEntityFrom",
+        "d(F)Lbru;": "getLook",
+        "ad()Z": "canBeCollidedWith",
+        "ae()Z": "canBePushed",
+        "ag()Ljava/lang/String;": "getEntityString",
+        "a(Lamg;F)Ladx;": "entityDropItem",
+        "ai()Z": "isEntityAlive",
+        "aj()Z": "isEntityInsideOpaqueBlock",
+        "e(Laha;)Z": "interactFirst",
+        "an()D": "getMountedYOffset",
+        "a(Lwx;)V": "mountEntity",
+        "ap()Lbru;": "getLookVec",
+        "aq()I": "getPortalCooldown",
+        "as()[Lamg;": "getInventory",
+        "c(ILamg;)V": "setCurrentItemOrArmor",
+        "at()Z": "isBurning",
+        "au()Z": "isRiding",
+        "av()Z": "isSneaking",
+        "c(Z)V": "setSneaking",
+        "aw()Z": "isSprinting",
+        "d(Z)V": "setSprinting",
+        "ax()Z": "isInvisible",
+        "e(Z)V": "setInvisible",
+        "g(I)Z": "getFlag",
+        "b(IZ)V": "setFlag",
+        "az()I": "getAir",
+        "h(I)V": "setAir",
+        "aA()V": "setInWeb",
+        "e_()Ljava/lang/String;": "getName",
+        "aB()[Lwx;": "getParts",
+        "k(Lwx;)Z": "isEntityEqual",
+        "aD()Z": "canAttackWithItem",
+        "b(Lwj;)Z": "isEntityInvulnerable",
+        "c(I)V": "travelToDimension",
+        "a(Laql;Laqr;Ldt;Lbea;)F": "getExplosionResistance",
+        "aE()I": "getMaxFallHeight",
+        "aI()Z": "doesEntityNotTriggerPressurePlate",
+        "aK()Ljava/util/UUID;": "getUniqueID",
+        "a(Ljava/lang/String;)V": "setCustomNameTag",
+        "aM()Ljava/lang/String;": "getCustomNameTag",
+        "l_()Z": "hasCustomName",
+        "g(Z)V": "setAlwaysRenderNameTag",
+        "aN()Z": "getAlwaysRenderNameTag",
+        "aS()F": "getEyeHeight",
+        "aT()Z": "isOutsideBorder",
+        "d()Lbru;": "getPositionVector",
+        "e()Laqr;": "getEntityWorld",
+        "f()Lwx;": "getCommandSenderEntity",
+        "u_()Z": "sendCommandFeedback",
+        "a(DDDFF)V": "setPositionAndRotation"
+      },
+      "fields": {
+        "s": "posX",
+        "t": "posY",
+        "u": "posZ",
+        "y": "rotationYaw",
+        "z": "rotationPitch"
+      }
+    },
+    "EntityLivingBase": {
+      "name": "xo",
+      "methods": {
+        "G()V": "killByVoid",
+        "aY()Z": "canBreatheUnderwater",
+        "j_()Z": "isChild",
+        "ba()Z": "isAdult",
+        "j(I)I": "decreaseAirSupply",
+        "b(Laha;)I": "getExperiencePoints",
+        "bb()Z": "isPlayer",
+        "bd()Lxo;": "getAITarget",
+        "be()I": "getRevengeTimer",
+        "b(Lxo;)V": "setRevengeTarget",
+        "bf()Lxo;": "getLastAttacker",
+        "bg()I": "getLastAttackerTime",
+        "p(Lwx;)V": "setLastAttacker",
+        "bh()I": "getAge",
+        "bk()V": "clearActivePotions",
+        "bl()Ljava/util/Collection;": "getActivePotionEffects",
+        "k(I)Z": "isPotionActive",
+        "a(Lwr;)Z": "isPotionActive",
+        "b(Lwr;)Lws;": "getActivePotionEffect",
+        "c(Lws;)V": "addPotionEffect",
+        "d(Lws;)Z": "isPotionApplicable",
+        "bm()Z": "isEntityUndead",
+        "m(I)V": "removePotionEffect",
+        "h(F)V": "heal",
+        "bn()F": "getHealth",
+        "i(F)V": "setHealth",
+        "a(Lwj;F)Z": "attackEntityFrom",
+        "b(Lamg;)V": "renderBrokenItemStack",
+        "a(Lwx;FDD)V": "knockBack",
+        "bp()Ljava/lang/String;": "getDeathSound",
+        "bq()V": "addRandomArmor",
+        "k_()Z": "isOnLadder",
+        "ai()Z": "isEntityAlive",
+        "e(FF)V": "fall",
+        "n(I)Ljava/lang/String;": "getFallDamageSound",
+        "br()I": "getTotalArmorValue",
+        "bu()F": "getMaxHealth",
+        "bv()I": "getArrowCountInEntity",
+        "o(I)V": "setArrowCountInEntity",
+        "bw()V": "swingItem",
+        "bA()Lamg;": "getHeldItem",
+        "p(I)Lamg;": "getEquipmentInSlot",
+        "c(ILamg;)V": "setCurrentItemOrArmor",
+        "d(Z)V": "setSprinting",
+        "as()[Lamg;": "getInventory",
+        "bB()F": "getSoundVolume",
+        "bC()F": "getSoundPitch",
+        "q(Lwx;)V": "dismountEntity",
+        "bF()V": "jump",
+        "g(FF)V": "moveEntityWithHeading",
+        "bI()F": "getAIMoveSpeed",
+        "k(F)V": "setAIMoveSpeed",
+        "r(Lwx;)Z": "attackEntityAsMob",
+        "bJ()Z": "isPlayerSleeping",
+        "a(Lwx;)V": "mountEntity",
+        "i(Z)V": "setJumping",
+        "t(Lwx;)Z": "canEntityBeSeen",
+        "d(F)Lbru;": "getLook",
+        "ad()Z": "canBeCollidedWith",
+        "ae()Z": "canBePushed",
+        "ac()V": "setBeenAttacked",
+        "bN()F": "getAbsorptionAmount",
+        "m(F)V": "setAbsorptionAmount",
+        "c(Lxo;)Z": "isOnSameTeam",
+        "a(Lbsd;)Z": "isOnTeam"
+      },
+      "fields": {}
+    },
+    "EntityPlayer": {
+      "name": "aha",
+      "methods": {
+        "bS()Z": "isUsingItem",
+        "bU()V": "stopUsingItem",
+        "bV()V": "clearItemInUse",
+        "bW()Z": "isBlocking",
+        "L()I": "getMaxInPortalTime",
+        "P()Ljava/lang/String;": "getSwimSound",
+        "aa()Ljava/lang/String;": "getSplashSound",
+        "aq()I": "getPortalCooldown",
+        "a(Ljava/lang/String;FF)V": "playSound",
+        "b(Lamg;I)V": "updateItemUse",
+        "bD()Z": "isMovementBlocked",
+        "bX()I": "getScore",
+        "r(I)V": "setScore",
+        "s(I)V": "addScore",
+        "bo()Ljava/lang/String;": "getHurtSound",
+        "bp()Ljava/lang/String;": "getDeathSound",
+        "a(Z)Ladx;": "dropOneItem",
+        "a(Lamg;Z)Ladx;": "dropPlayerItemWithRandomChoice",
+        "a(Lamg;ZZ)Ladx;": "dropItem",
+        "a(Lato;)F": "getToolDigEfficiency",
+        "b(Lato;)Z": "canHarvestBlock",
+        "a(Lwj;F)Z": "attackEntityFrom",
+        "j(F)V": "damageArmor",
+        "br()I": "getTotalArmorValue",
+        "bY()F": "getArmorVisibility",
+        "d(Lwj;F)V": "damageEntity",
+        "u(Lwx;)Z": "interactWith",
+        "bZ()Lamg;": "getCurrentEquippedItem",
+        "J()V": "setDead",
+        "aj()Z": "isEntityInsideOpaqueBlock",
+        "p()Z": "isInBed",
+        "a(Laqr;Ldt;Z)Ldt;": "getBedSpawnLocation",
+        "bJ()Z": "isPlayerSleeping",
+        "cf()Z": "isPlayerFullyAsleep",
+        "ch()Ldt;": "getBedLocation",
+        "bF()V": "jump",
+        "f(Lwx;)V": "moveEntityWithHeading",
+        "bI()F": "getAIMoveSpeed",
+        "k(DDD)V": "addMovementStat",
+        "l(DDD)V": "addMountedMovementStat",
+        "e(FF)V": "fall",
+        "n(I)Ljava/lang/String;": "getFallSoundString",
+        "aA()V": "setInWeb",
+        "q(I)Lamg;": "getCurrentArmor",
+        "u(I)V": "addExperience",
+        "cj()I": "getXPSeed",
+        "b(I)V": "removeExperienceLevel",
+        "ck()I": "xpBarCap",
+        "a(F)V": "addExhaustion",
+        "cm()Z": "shouldHeal",
+        "cn()Z": "isAllowEdit",
+        "a(Ldt;Lej;Lamg;)Z": "canPlayerEdit",
+        "b(Laha;)I": "getExperiencePoints",
+        "e_()Ljava/lang/String;": "getName",
+        "bA()Lamg;": "getHeldItem",
+        "c(ILamg;)V": "setCurrentItemOrArmor",
+        "v()Z": "isSpectator",
+        "as()[Lamg;": "getInventory",
+        "aL()Z": "isPushedByWater",
+        "cp()Lbsb;": "getWorldScoreboard",
+        "bO()Lbsd;": "getTeam",
+        "f_()Lhp;": "getDisplayName",
+        "aS()F": "getEyeHeight",
+        "m(F)V": "setAbsorptionAmount",
+        "bN()F": "getAbsorptionAmount",
+        "b(Ljava/lang/String;)Ljava/util/UUID;": "getOfflineUUID",
+        "a(Lvz;)Z": "canOpen",
+        "u_()Z": "sendCommandFeedback",
+        "d(ILamg;)Z": "replaceItemInInventory",
+        "b(Lhp;)V": "addChatComponentMessage",
+        "a(Lamg;I)V": "setItemInUse"
+      },
+      "fields": {
+        "bk": "openContainer",
+        "bA": "capabilities",
+        "bi": "inventory"
+      }
+    },
+    "EntityPlayerMP": {
+      "name": "qx",
+      "methods": {
+        "a(I)V": "addExperienceLevel",
+        "h_()V": "addSelfToInternalCraftingInventory",
+        "a(Lwj;F)Z": "attackEntityFrom",
+        "a(Laha;)Z": "canAttackPlayer",
+        "c(I)V": "travelToDimension",
+        "a(ZZZ)V": "wakeUpPlayer",
+        "a(Lwx;)V": "mountEntity",
+        "a(Lbdh;)V": "openEditSign",
+        "a(Lvx;)V": "displayGui",
+        "a(Lvs;)V": "displayGUIChest"
+      },
+      "fields": {
+        "a": "playerNetServerHandler"
+      }
+    },
+    "C0EPacketClickWindow": {
+      "name": "mb",
+      "fields": {
+        "a": "windowId",
+        "f": "mode",
+        "c": "usedButton",
+        "e": "clickedItem",
+        "b": "slotId"
+      }
+    },
+    "Container": {
+      "name": "ahy",
+      "fields": {
+        "d": "windowId",
+        "c": "inventorySlots"
+      }
+    },
+    "Slot": {
+      "name": "ajh",
+      "methods": {
+        "d()Lamg;": "getStack"
+      }
+    },
+    "PlayerCapabilities": {
+      "name": "agx",
+      "fields": {
+        "d": "isCreativeMode"
+      }
+    },
+    "NBTBase": {
+      "name": "gd"
+    },
+    "NBTTagByte": {
+      "name": "fm",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagByteArray": {
+      "name": "fl",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagCompound": {
+      "name": "fn",
+      "methods": {
+        "b(Ljava/lang/String;I)Z": "hasKey",
+        "m(Ljava/lang/String;)Lfn;": "getCompoundTag",
+        "c(Ljava/lang/String;I)Lfv;": "getTagList",
+        "a(Ljava/lang/String;B)V": "setByte",
+        "a(Ljava/lang/String;[B)V": "setByteArray",
+        "a(Ljava/lang/String;D)V": "setDouble",
+        "a(Ljava/lang/String;F)V": "setFloat",
+        "a(Ljava/lang/String;I)V": "setInteger",
+        "a(Ljava/lang/String;[I)V": "setIntArray",
+        "a(Ljava/lang/String;J)V": "setLong",
+        "a(Ljava/lang/String;S)V": "setShort",
+        "a(Ljava/lang/String;Ljava/lang/String;)V": "setString",
+        "a(Ljava/lang/String;Lgd;)V": "setTag"
+      },
+      "fields": {
+        "c": "tagMap"
+      }
+    },
+    "NBTTagDouble": {
+      "name": "fq",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagFloat": {
+      "name": "fs",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagInt": {
+      "name": "fu",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagIntArray": {
+      "name": "ft",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagList": {
+      "name": "fv",
+      "methods": {
+        "a(Lgd;)V": "appendTag",
+        "c()I": "tagCount",
+        "f(I)Ljava/lang/String;": "getStringTagAt"
+      },
+      "fields": {
+        "c": "tagList"
+      }
+    },
+    "NBTTagLong": {
+      "name": "fw",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagShort": {
+      "name": "gb",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "NBTTagString": {
+      "name": "gc",
+      "fields": {
+        "b": "data"
+      }
+    },
+    "C01PacketChatMessage": {
+      "name": "lv",
+      "fields": {
+        "a": "message"
+      }
+    },
+    "JsonToNBT": {
+      "name": "gg",
+      "methods": {
+        "a(Ljava/lang/String;)Lfn;": "func_180713_a"
+      }
+    }
+  }
+}
