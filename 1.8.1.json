@@ -15,6 +15,16 @@
       "fields": {
       }
     },
+    "MinecraftServer": {
+      "name": "net.minecraft.server.MinecraftServer",
+      "methods": {
+        "getServerModName()Ljava/lang/String;": "getServerModName",
+        "C()V": "startServerThread"
+      },
+      "fields": {
+        "v": "serverConfigManager"
+      }
+    },
     "Entity": {
       "name": "wx",
       "methods": {
@@ -82,7 +92,7 @@
       }
     },
     "GameProfile": {
-      "name": "org.mojang.authlib.GameProfile",
+      "name": "com.mojang.authlib.GameProfile",
       "fields": {
         "name": "name"
       }
@@ -101,6 +111,13 @@
       "fields": {
         "a": "foodLevel",
         "b": "foodSaturationLevel"
+      }
+    },
+    "ServerConfigurationManager": {
+      "name": "sp",
+      "fields": {
+        "q": "whitelistEnforced",
+        "e": "maxPlayers"
       }
     }
   }
