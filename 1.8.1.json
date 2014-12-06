@@ -70,7 +70,8 @@
       "fields": {
         "bo": "isLeashed",
         "bp": "leashedToEntity",
-        "bm": "canPickUpLoot"
+        "bm": "canPickUpLoot",
+        "bl": "equipment"
       }
     },
     "DamageSource": {
@@ -90,6 +91,9 @@
         "bl": "foodStats",
         "bk": "openContainer"
       }
+    },
+    "EntityPlayerMP": {
+      "name": "qx"
     },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
@@ -117,7 +121,86 @@
       "name": "sp",
       "fields": {
         "q": "whitelistEnforced",
-        "e": "maxPlayers"
+        "e": "maxPlayers",
+        "i": "playerEntityList"
+      }
+    },
+    "ItemStack": {
+      "name": "amg",
+      "fields": {
+        "b": "stackSize",
+        "f": "itemDamage",
+        "d": "item"
+      }
+    },
+    "Item": {
+      "name": "aln",
+      "fields": {
+        "h": "maxStackSize",
+        "e": "itemRegistry"
+      }
+    },
+    "Block": {
+      "name": "ato",
+      "methods": {
+        "a(I)Lbea;": "getStateFromMeta",
+        "c(Lbea;)I": "getMetaFromState"
+      },
+      "fields": {
+        "c": "blockRegistry",
+        "N": "defaultBlockState"
+      }
+    },
+    "Blocks": {
+      "name": "atv",
+      "methods": {
+        "a(Ljava/lang/String;)Lato;": "getRegisteredBlock"
+      }
+    },
+    "IBlockState": {
+      "name": "bea",
+      "methods": {
+        "a(Lbev;Ljava/lang/Comparable;)Lbea;": "withProperty"
+      }
+    },
+    "Items": {
+      "name": "amh",
+      "methods": {
+        "a(Ljava/lang/String;)Laln;": "getRegisteredItem"
+      }
+    },
+    "ItemBlock": {
+      "name": "ajr"
+    },
+    "RegistryNamespaced": {
+      "name": "ev",
+      "methods": {
+        "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject"
+      }
+    },
+    "ResourceLocation": {
+      "name": "ob",
+      "fields": {
+        "b": "resourcePath"
+      }
+    },
+    "BlockState": {
+      "name": "bee",
+      "fields": {
+        "a": "block",
+        "b": "properties"
+      }
+    },
+    "IProperty": {
+      "name": "bev",
+      "methods": {
+        "c()Ljava/util/Collection;": "getAllowedValues"
+      }
+    },
+    "PropertyHelper": {
+      "name": "beq",
+      "fields": {
+        "b": "name"
       }
     }
   }
