@@ -22,6 +22,7 @@
         "C()V": "startServerThread"
       },
       "fields": {
+        "d": "worldServers",
         "v": "serverConfigManager"
       }
     },
@@ -35,7 +36,9 @@
         "aM()Ljava/lang/String;": "getCustomNameTag",
         "a(Ljava/lang/String;)V": "setCustomNameTag",
         "aN()Z": "getAlwaysRenderNameTag",
-        "g(Z)V": "setAlwaysRenderNameTag"
+        "g(Z)V": "setAlwaysRenderNameTag",
+        "e_()Ljava/lang/String;": "getName",
+        "b(DDD)V": "setPosition"
       },
       "fields": {
         "C": "onGround",
@@ -49,7 +52,8 @@
         "I": "isDead",
         "i": "fire",
         "aq": "entityUniqueID",
-        "X": "fireResistance"
+        "X": "fireResistance",
+        "o": "worldObj"
       }
     },
     "EntityLivingBase": {
@@ -93,7 +97,10 @@
       }
     },
     "EntityPlayerMP": {
-      "name": "qx"
+      "name": "qx",
+      "fields": {
+        "a": "playerNetServerHandler"
+      }
     },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
@@ -127,6 +134,10 @@
     },
     "ItemStack": {
       "name": "amg",
+      "methods": {
+        "b(Lfn;)Lfn;": "writeToNBT",
+        "a(Lfn;)Lamg;": "loadItemStackFromNBT"
+      },
       "fields": {
         "b": "stackSize",
         "f": "itemDamage",
@@ -148,7 +159,8 @@
       },
       "fields": {
         "c": "blockRegistry",
-        "N": "defaultBlockState"
+        "N": "defaultBlockState",
+        "u": "lightValue"
       }
     },
     "Blocks": {
@@ -202,6 +214,64 @@
       "fields": {
         "b": "name"
       }
+    },
+    "JsonToNBT": {
+      "name": "gg",
+      "methods": {
+        "a(Ljava/lang/String;)Lfn;": "func_180713_a"
+      }
+    },
+    "EntityList": {
+      "name": "xd",
+      "methods": {
+        "a(Ljava/lang/String;Laqr;)Lwx;": "createEntityByName"
+      },
+      "fields": {
+        "d": "classToStringMapping"
+      }
+    },
+    "IChatComponent$Serializer": {
+      "name": "hq",
+      "methods": {
+        "a(Ljava/lang/String;)Lhp;": "jsonToComponent"
+      }
+    },
+    "S02PacketChat": {
+      "name": "ja"
+    },
+    "NetHandlerPlayServer": {
+      "name": "rl",
+      "methods": {
+        "a(Lie;)V": "sendPacket"
+      }
+    },
+    "World": {
+      "name": "aqr",
+      "methods": {
+        "d(Lwx;)Z": "spawnEntityInWorld",
+        "p(Ldt;)Lbea;": "getBlockState",
+        "a(Ldt;Lbea)Z": "setBlockState",
+        "b(Larc;Ldt;)I": "getLightFor"
+      },
+      "fields": {
+        "x": "worldInfo",
+        "f": "loadedEntityList"
+      }
+    },
+    "WorldServer": {
+      "name": "qu"
+    },
+    "WorldInfo": {
+      "name": "bqm",
+      "fields": {
+        "n": "levelName"
+      }
+    },
+    "BlockPos": {
+      "name": "dt"
+    },
+    "EnumSkyBlock": {
+      "name": "arc"
     }
   }
 }
