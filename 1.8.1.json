@@ -146,6 +146,9 @@
     },
     "Item": {
       "name": "aln",
+      "methods": {
+        "a(Lamg;Lato;)F": "getStrVsBlock"
+      },
       "fields": {
         "h": "maxStackSize",
         "e": "itemRegistry"
@@ -160,7 +163,9 @@
       "fields": {
         "c": "blockRegistry",
         "N": "defaultBlockState",
-        "u": "lightValue"
+        "u": "lightValue",
+        "w": "blockHardness",
+        "J": "blockMaterial"
       }
     },
     "Blocks": {
@@ -272,6 +277,18 @@
     },
     "EnumSkyBlock": {
       "name": "arc"
+    },
+    "Material": {
+      "name": "bod",
+      "fields": {
+        "N": "requiresNoTool"
+      }
+    },
+    "EnchantmentHelper": {
+      "name": "ape",
+      "methods": {
+        "a(ILamg;)I": "getEnchantmentLevel"
+      }
     }
   }
 }
