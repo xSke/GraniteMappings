@@ -255,7 +255,7 @@
       "methods": {
         "d(Lwx;)Z": "spawnEntityInWorld",
         "p(Ldt;)Lbea;": "getBlockState",
-        "a(Ldt;Lbea)Z": "setBlockState",
+        "a(Ldt;Lbea;)Z": "setBlockState",
         "b(Larc;Ldt;)I": "getLightFor"
       },
       "fields": {
