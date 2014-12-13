@@ -23,7 +23,8 @@
       },
       "fields": {
         "d": "worldServers",
-        "v": "serverConfigManager"
+        "v": "serverConfigManager",
+        "z": "onlineMode"
       }
     },
     "Entity": {
@@ -53,7 +54,8 @@
         "i": "fire",
         "aq": "entityUniqueID",
         "X": "fireResistance",
-        "o": "worldObj"
+        "o": "worldObj",
+        "Z": "hurtResistantTime"
       }
     },
     "EntityLivingBase": {
@@ -66,7 +68,8 @@
       },
       "fields": {
         "bk": "lastAttacker",
-        "aX": "lastDamage"
+        "aX": "lastDamage",
+        "aD": "maxHurtResistantTime"
       }
     },
     "EntityLiving": {
@@ -136,7 +139,8 @@
       "name": "amg",
       "methods": {
         "b(Lfn;)Lfn;": "writeToNBT",
-        "a(Lfn;)Lamg;": "loadItemStackFromNBT"
+        "a(Lfn;)Lamg;": "loadItemStackFromNBT",
+        "b(Lato;)Z": "canHarvestBlock"
       },
       "fields": {
         "b": "stackSize",
@@ -165,7 +169,8 @@
         "N": "defaultBlockState",
         "u": "lightValue",
         "w": "blockHardness",
-        "J": "blockMaterial"
+        "J": "blockMaterial",
+        "z": "needsRandomTick"
       }
     },
     "Blocks": {
@@ -187,7 +192,10 @@
       }
     },
     "ItemBlock": {
-      "name": "ajr"
+      "name": "ajr",
+      "fields": {
+        "a": "block"
+      }
     },
     "RegistryNamespaced": {
       "name": "ev",
@@ -289,6 +297,26 @@
       "methods": {
         "a(ILamg;)I": "getEnchantmentLevel"
       }
+    },
+    "ThreadQuickExitException": {
+      "name": "pj"
+    },
+    "Vec3i": {
+      "name": "fd",
+      "fields": {
+        "a": "x",
+        "c": "y",
+        "d": "z"
+      }
+    },
+    "Container": {
+      "name": "ahy"
+    },
+    "NBTTagCompound": {
+      "name": "fn"
+    },
+    "Packet": {
+      "name": "ie"
     }
   }
 }
