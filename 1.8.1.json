@@ -11,6 +11,7 @@
     "DedicatedServer": {
       "name": "pp",
       "methods": {
+        "aP()V": "setGuiEnabled"
       },
       "fields": {
       }
@@ -129,6 +130,10 @@
     },
     "ServerConfigurationManager": {
       "name": "sp",
+      "methods": {
+        "a(Lgr;Lqx;)V": "initializeConnectionToPlayer",
+        "c(Lqx;)V": "playerLoggedIn"
+      },
       "fields": {
         "q": "whitelistEnforced",
         "e": "maxPlayers",
@@ -317,6 +322,12 @@
     },
     "Packet": {
       "name": "ie"
+    },
+    "StatCollector": {
+      "name": "fi",
+      "methods": {
+        "a(Ljava/lang/String;)Ljava/lang/String;": "translateToLocal"
+      }
     }
   }
 }
