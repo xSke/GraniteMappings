@@ -328,6 +328,12 @@
       "methods": {
         "a(Ljava/lang/String;)Ljava/lang/String;": "translateToLocal"
       }
+    },
+    "S45PacketTitle": {
+      "name": "lk"
+    },
+    "S45PacketTitle$Type": {
+      "name": "ll"
     }
   }
 }
