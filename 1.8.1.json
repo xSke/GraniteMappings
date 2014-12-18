@@ -25,7 +25,8 @@
       "fields": {
         "d": "worldServers",
         "v": "serverConfigManager",
-        "z": "onlineMode"
+        "z": "onlineMode",
+        "Z": "playerCache"
       }
     },
     "Entity": {
@@ -109,7 +110,8 @@
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
       "fields": {
-        "name": "name"
+        "name": "name",
+        "id": "id"
       }
     },
     "PlayerCapabilities": {
@@ -132,7 +134,8 @@
       "name": "sp",
       "methods": {
         "a(Lgr;Lqx;)V": "initializeConnectionToPlayer",
-        "c(Lqx;)V": "playerLoggedIn"
+        "c(Lqx;)V": "playerLoggedIn",
+        "a(Lhp;)V": "sendChatMsg"
       },
       "fields": {
         "q": "whitelistEnforced",
@@ -166,7 +169,7 @@
     "Block": {
       "name": "ato",
       "methods": {
-	    "f()Ljava/lang/String;": "getUnlocalizedName",
+      "f()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
         "c(Lbea;)I": "getMetaFromState"
       },
@@ -292,10 +295,10 @@
       "methods": {
         "c(DD)V": "setCenter",
         "h()D": "getDiameter",
-        "i()L": "getTimeRemaining",
+        "i()J": "getTimeRemaining",
         "c(D)V": "setDamageAmount",
         "b(D)V": "setBlockBuffer",
-        "k(I)V": "setWarningTime",
+        "b(I)V": "setWarningTime",
         "c(I)V": "setWarningDistance"
       },
       "fields": {
@@ -309,7 +312,7 @@
         "j": "blockBuffer",
         "k": "warningTime",
         "l": "warningDistance"
-      }	  
+      }   
     },
     "BlockPos": {
       "name": "dt"
@@ -360,6 +363,12 @@
     },
     "S45PacketTitle$Type": {
       "name": "ll"
+    },
+    "PlayerProfileCache": {
+      "name": "sa",
+      "methods": {
+        "a(Ljava/util/UUID;)Lcom/mojang/authlib/GameProfile;": "func_152652_a"
+      }
     }
   }
 }
