@@ -166,7 +166,7 @@
     "Block": {
       "name": "ato",
       "methods": {
-	    "a()Ljava/lang/String;": "getUnlocalizedName",
+	    "f()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
         "c(Lbea;)I": "getMetaFromState"
       },
@@ -274,7 +274,8 @@
       },
       "fields": {
         "x": "worldInfo",
-        "f": "loadedEntityList"
+        "f": "loadedEntityList",
+        "M": "worldBorder"
       }
     },
     "WorldServer": {
@@ -285,6 +286,30 @@
       "fields": {
         "n": "levelName"
       }
+    },
+    "WorldBorder": {
+      "name": "bez",
+      "methods": {
+        "c(DD)V": "setCenter",
+        "h()D": "getDiameter",
+        "i()L": "getTimeRemaining",
+        "c(D)V": "setDamageAmount",
+        "b(D)V": "setBlockBuffer",
+        "k(I)V": "setWarningTime",
+        "c(I)V": "setWarningDistance"
+      },
+      "fields": {
+        "b": "centerX",
+        "c": "centerZ",
+        "d": "startDiameter",
+        "e": "endDiameter",
+        "f": "endTime",
+        "g": "startTime",
+        "i": "damageAmount",
+        "j": "blockBuffer",
+        "k": "warningTime",
+        "l": "warningDistance"
+      }	  
     },
     "BlockPos": {
       "name": "dt"
