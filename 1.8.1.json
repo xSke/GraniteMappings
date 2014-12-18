@@ -166,6 +166,7 @@
     "Block": {
       "name": "ato",
       "methods": {
+	    "a()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
         "c(Lbea;)I": "getMetaFromState"
       },
