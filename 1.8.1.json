@@ -324,7 +324,7 @@
         "a(Ljava/lang/String;Ljava/lang/String;)V": "setOrCreateGameRule",
         "b()[Ljava/lang/String;": "getRules"
       }
-    }
+    },
     "BlockPos": {
       "name": "dt"
     },
