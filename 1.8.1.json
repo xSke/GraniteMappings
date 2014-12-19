@@ -296,6 +296,8 @@
         "c(DD)V": "setCenter",
         "h()D": "getDiameter",
         "i()J": "getTimeRemaining",
+        "a(D)V": "setTarget",
+        "a(DDJ)V": "setTarget",
         "c(D)V": "setDamageAmount",
         "b(D)V": "setBlockBuffer",
         "b(I)V": "setWarningTime",
