@@ -312,7 +312,7 @@
         "j": "blockBuffer",
         "k": "warningTime",
         "l": "warningDistance"
-      }   
+      }
     },
     "BlockPos": {
       "name": "dt"
@@ -368,6 +368,15 @@
       "name": "sa",
       "methods": {
         "a(Ljava/util/UUID;)Lcom/mojang/authlib/GameProfile;": "func_152652_a"
+      }
+    },
+    "ItemInWorldManager": {
+      "name": "qy",
+      "methods": {
+        "b(Ldt;)Z": "func_180237_b"
+      },
+      "fields": {
+        "a": "theWorld"
       }
     }
   }
