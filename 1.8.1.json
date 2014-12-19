@@ -380,6 +380,15 @@
       "methods": {
         "a(Ljava/util/UUID;)Lcom/mojang/authlib/GameProfile;": "func_152652_a"
       }
+    },
+    "PotionEffect": {
+      "name": "ws",
+      "fields": {
+        "c": "duration",
+        "d": "amplifier",
+        "f": "isAmbient",
+        "h": "showParticles"
+      }
     }
   }
 }
