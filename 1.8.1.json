@@ -287,7 +287,8 @@
     "WorldInfo": {
       "name": "bqm",
       "fields": {
-        "n": "levelName"
+        "n": "levelName",
+        "K": "gameRules"
       }
     },
     "WorldBorder": {
@@ -296,8 +297,8 @@
         "c(DD)V": "setCenter",
         "h()D": "getDiameter",
         "i()J": "getTimeRemaining",
-        "a(D)V": "setTarget",
-        "a(DDJ)V": "setTarget1",
+        "a(D)V": "setDiameter",
+        "a(DDJ)V": "setTargetAndTime",
         "c(D)V": "setDamageAmount",
         "b(D)V": "setBlockBuffer",
         "b(I)V": "setWarningTime",
@@ -316,6 +317,14 @@
         "l": "warningDistance"
       }   
     },
+    "GameRules": {
+      "name": "aqn",
+      "methods": {
+        "a(Ljava/lang/String;)Ljava/lang/String;": "getGameRuleStringValue",
+        "a(Ljava/lang/String;Ljava/lang/String;)V": "setOrCreateGameRule",
+        "b()[Ljava/lang/String;": "getRules"
+      }
+    }
     "BlockPos": {
       "name": "dt"
     },
