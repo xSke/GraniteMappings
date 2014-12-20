@@ -4,23 +4,22 @@
       "name": "oe",
       "methods": {
         "c()V": "func_151354_b"
-      },
-      "fields": {
       }
     },
     "DedicatedServer": {
       "name": "pp",
       "methods": {
-        "aP()V": "setGuiEnabled"
-      },
-      "fields": {
+        "aP()V": "setGuiEnabled",
+        "i()Z": "startServer"
       }
     },
     "MinecraftServer": {
       "name": "net.minecraft.server.MinecraftServer",
       "methods": {
         "getServerModName()Ljava/lang/String;": "getServerModName",
-        "C()V": "startServerThread"
+        "C()V": "startServerThread",
+        "s()V": "stopServer",
+        "a(Lsp;)V": "setConfigManager"
       },
       "fields": {
         "d": "worldServers",
