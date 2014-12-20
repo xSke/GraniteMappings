@@ -106,6 +106,27 @@
         "a": "playerNetServerHandler"
       }
     },
+    "EntityFallingBlock": {
+      "name": "adw",
+      "fields": {
+        "b": "shouldDropItem",
+        "e": "canPlaceAsBlock",
+        "g": "fallHurtMax",
+        "h": "fallHurtAmount"
+      }
+    },
+    "EntityItem": {
+      "name": "adx",
+      "methods": {
+        "l()Lamg;": "getEntityItem"
+      }
+    },
+    "EntityXPOrb": {
+      "name": "xm",
+      "fields": {
+        "e": "xpValue"
+      }
+    },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
       "fields": {
