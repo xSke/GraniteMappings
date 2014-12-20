@@ -418,6 +418,12 @@
         "f": "isAmbient",
         "h": "showParticles"
       }
+    },
+    "CommandHandler": {
+      "name": "ab",
+      "methods": {
+        "a(Lae;Ljava/lang/String;)I": "executeCommand"
+      }
     }
   }
 }
