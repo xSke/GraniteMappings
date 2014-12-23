@@ -190,7 +190,7 @@
     "Block": {
       "name": "ato",
       "methods": {
-      "f()Ljava/lang/String;": "getUnlocalizedName",
+        "f()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
         "c(Lbea;)I": "getMetaFromState"
       },
@@ -408,7 +408,8 @@
         "b(Ldt;)Z": "func_180237_b"
       },
       "fields": {
-        "a": "theWorld"
+        "a": "theWorld",
+        "b": "thisPlayerMP"
       }
     },
     "PotionEffect": {
@@ -425,6 +426,9 @@
       "methods": {
         "a(Lae;Ljava/lang/String;)I": "executeCommand"
       }
+    },
+    "S23PacketBlockChange": {
+      "name": "ix"
     }
   }
 }
