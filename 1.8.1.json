@@ -428,6 +428,14 @@
     },
     "S23PacketBlockChange": {
       "name": "ix"
+    },
+    "Chunk": {
+      "name": "bff",
+      "fields": {
+        "a": "xPosition",
+        "b": "yPosition",
+        "h": "isChunkLoaded"
+      }
     }
   }
 }
