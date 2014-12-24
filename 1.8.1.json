@@ -408,8 +408,7 @@
         "b(Ldt;)Z": "func_180237_b"
       },
       "fields": {
-        "a": "theWorld",
-        "b": "thisPlayerMP"
+        "a": "theWorld"
       }
     },
     "PotionEffect": {
