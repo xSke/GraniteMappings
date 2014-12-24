@@ -23,8 +23,11 @@
       },
       "fields": {
         "d": "worldServers",
+        "t": "hostname",
+        "u": "serverPort",
         "v": "serverConfigManager",
         "z": "onlineMode",
+        "E": "motd",
         "Z": "playerCache"
       }
     },
@@ -308,6 +311,7 @@
     "WorldInfo": {
       "name": "bqm",
       "fields": {
+        "b": "randomSeed",
         "n": "levelName",
         "K": "gameRules"
       }
@@ -408,7 +412,8 @@
         "b(Ldt;)Z": "func_180237_b"
       },
       "fields": {
-        "a": "theWorld"
+        "a": "theWorld",
+        "b": "thisPlayerMP"
       }
     },
     "PotionEffect": {
