@@ -433,7 +433,7 @@
       "name": "bff",
       "fields": {
         "a": "xPosition",
-        "b": "yPosition",
+        "b": "zPosition",
         "h": "isChunkLoaded"
       }
     }
