@@ -362,6 +362,22 @@
         "N": "requiresNoTool"
       }
     },
+    "Enchantment": {
+      "name": "apc",
+      "fields": {
+        "F": "weight",
+        "D": "name"
+      },
+      "methods": {
+        "b(Ljava/lang/String;)Lapc;": "getEnchantmentByLocation",
+        "b()I": "getMinLevel",
+        "e()I": "getMaxLevel",
+        "a(I)I": "getMinEnchantability",
+        "b(I)I": "getMaxEnchantability",
+        "a(Lamg;)Z": "canApply",
+        "a(Lapc;)Z": "canApplyTogether"
+      }
+    },
     "EnchantmentHelper": {
       "name": "ape",
       "methods": {
