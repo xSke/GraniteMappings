@@ -131,6 +131,13 @@
         "e": "xpValue"
       }
     },
+    "EntityTNTPrimed": {
+      "name": "ael",
+      "fields": {
+        "a": "fuse",
+        "b": "tntTriggeredBy"
+      }
+    },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
       "fields": {
