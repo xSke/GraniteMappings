@@ -199,18 +199,20 @@
     },
     "Block": {
       "name": "ato",
-      "methods": {
-        "f()Ljava/lang/String;": "getUnlocalizedName",
-        "a(I)Lbea;": "getStateFromMeta",
-        "c(Lbea;)I": "getMetaFromState"
-      },
       "fields": {
         "c": "blockRegistry",
         "N": "defaultBlockState",
         "u": "lightValue",
         "w": "blockHardness",
+        "y": "enableStats",
         "J": "blockMaterial",
         "z": "needsRandomTick"
+      },
+      "methods": {
+        "f()Ljava/lang/String;": "getUnlocalizedName",
+        "a(I)Lbea;": "getStateFromMeta",
+        "c(Lbea;)I": "getMetaFromState",
+        "d()Z": "isSolidFullCube"
       }
     },
     "Blocks": {
