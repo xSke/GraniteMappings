@@ -108,6 +108,9 @@
       "name": "qx",
       "fields": {
         "a": "playerNetServerHandler"
+      },
+      "methods": {
+        "a(Lwj;)V" : "onDeath"
       }
     },
     "EntityFallingBlock": {
