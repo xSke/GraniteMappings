@@ -227,6 +227,12 @@
         "a(Lbev;Ljava/lang/Comparable;)Lbea;": "withProperty"
       }
     },
+    "BlockFalling": {
+      "name": "avq"
+    },
+    "BlockLiquid": {
+      "name": "axj"
+    },
     "Items": {
       "name": "amh",
       "methods": {
