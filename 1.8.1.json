@@ -182,7 +182,8 @@
       "methods": {
         "b(Lfn;)Lfn;": "writeToNBT",
         "a(Lfn;)Lamg;": "loadItemStackFromNBT",
-        "b(Lato;)Z": "canHarvestBlock"
+        "b(Lato;)Z": "canHarvestBlock",
+        "a(Laha;Laqr;Ldt;Lej;FFF)Z": "onItemUse"
       },
       "fields": {
         "b": "stackSize",
@@ -215,7 +216,8 @@
         "f()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
         "c(Lbea;)I": "getMetaFromState",
-        "d()Z": "isSolidFullCube"
+        "d()Z": "isSolidFullCube",
+        "a(Laqr;Ldt;)Z": "isReplaceable"
       }
     },
     "Blocks": {
@@ -369,7 +371,10 @@
       }
     },
     "BlockPos": {
-      "name": "dt"
+      "name": "dt",
+      "methods": {
+        "a(Lej;I)Ldt;": "offset"
+      }
     },
     "EnumSkyBlock": {
       "name": "arc"
@@ -474,6 +479,12 @@
         "a": "xPosition",
         "b": "zPosition",
         "h": "isChunkLoaded"
+      }
+    },
+    "EnumFacing": {
+      "name": "ej",
+      "fields": {
+        "m": "directionVec"
       }
     }
   }
