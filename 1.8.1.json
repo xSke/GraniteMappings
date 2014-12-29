@@ -93,7 +93,7 @@
       },
       "methods": {
       	"p()Ljava/lang/String;" : "getDamageType",
-      	"i()L;" : "getSourceOfDamage"
+      	"i()Lwj;" : "getSourceOfDamage"
       }
     },
     "EntityPlayer": {
