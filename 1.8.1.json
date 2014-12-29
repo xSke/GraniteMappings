@@ -90,6 +90,10 @@
       "name": "wj",
       "fields": {
         "k": "generic"
+      },
+      "methods": {
+      	"p()Ljava/lang/String;" : "getDamageType",
+      	"i()Lwj;" : "getSourceOfDamage"
       }
     },
     "EntityPlayer": {
