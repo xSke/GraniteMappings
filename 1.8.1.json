@@ -73,7 +73,8 @@
       "fields": {
         "bk": "lastAttacker",
         "aX": "lastDamage",
-        "aD": "maxHurtResistantTime"
+        "aD": "maxHurtResistantTime",
+        "f": "_combatTracker"
       }
     },
     "EntityLiving": {
@@ -92,7 +93,7 @@
         "k": "generic"
       },
       "methods": {
-      	"p()Ljava/lang/String;" : "getDamageType",
+      	"p()Ljava/lang/String;": "getDamageType",
       	"i()Lwx;" : "getSourceOfDamage"
       }
     },
@@ -303,7 +304,8 @@
     "IChatComponent$Serializer": {
       "name": "hq",
       "methods": {
-        "a(Ljava/lang/String;)Lhp;": "jsonToComponent"
+        "a(Ljava/lang/String;)Lhp;": "jsonToComponent",
+        "a(Lhp;)Ljava/lang/String;": "componentToJson"
       }
     },
     "S02PacketChat": {
@@ -495,6 +497,12 @@
       "name": "ej",
       "fields": {
         "m": "directionVec"
+      }
+    },
+    "CombatTracker": {
+      "name": "wi",
+      "methods": {
+        "b()Lhp;": "func_151521_b"
       }
     }
   }
