@@ -94,7 +94,7 @@
       },
       "methods": {
       	"p()Ljava/lang/String;": "getDamageType",
-      	"i()Lwx;" : "getSourceOfDamage"
+      	"i()Lwx;": "getSourceOfDamage"
       }
     },
     "EntityPlayer": {
@@ -326,7 +326,8 @@
         "b(Larc;Ldt;)I": "getLightFor",
         "z(Ldt;)Z": "isPowered",
         "b(Ldt;Lej;)Z": "isFacePowered",
-        "A(Ldt;)I": "isIndirectlyPowered"
+        "A(Ldt;)I": "isIndirectlyPowered",
+        "b(Ldt;)Larj;": "getBiome"
       },
       "fields": {
         "x": "worldInfo",
@@ -342,7 +343,8 @@
       "fields": {
         "b": "randomSeed",
         "n": "levelName",
-        "K": "gameRules"
+        "K": "gameRules",
+        "m": "dimension"
       }
     },
     "WorldBorder": {
@@ -503,6 +505,14 @@
       "name": "wi",
       "methods": {
         "b()Lhp;": "func_151521_b"
+      }
+    },
+    "BiomeGenBase": {
+      "name": "arj",
+      "fields": {
+        "ap": "temperature",
+        "an": "minHeight",
+        "ao": "maxHeight"
       }
     }
   }
