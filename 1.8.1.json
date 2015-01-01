@@ -514,6 +514,14 @@
         "an": "minHeight",
         "ao": "maxHeight"
       }
+    },
+    "EnumArt": {
+      "name": "ado",
+      "fields": {
+        "B": "name",
+        "C": "width",
+        "D": "height"
+      }
     }
   }
 }
