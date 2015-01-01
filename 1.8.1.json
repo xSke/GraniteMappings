@@ -113,7 +113,8 @@
     "EntityPlayerMP": {
       "name": "qx",
       "fields": {
-        "a": "playerNetServerHandler"
+        "a": "playerNetServerHandler",
+        "bI": "translator"
       },
       "methods": {
         "a(Lwj;)V" : "onDeath"
