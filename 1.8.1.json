@@ -28,7 +28,8 @@
         "v": "serverConfigManager",
         "z": "onlineMode",
         "E": "motd",
-        "Z": "playerCache"
+        "Z": "playerCache",
+        "aa": "serverThread"
       }
     },
     "Entity": {
@@ -314,7 +315,11 @@
     "NetHandlerPlayServer": {
       "name": "rl",
       "methods": {
-        "a(Lie;)V": "sendPacket"
+        "a(Lie;)V": "sendPacket",
+        "a(Llv;)V": "processChatMessage"
+      },
+      "fields": {
+        "b": "playerEntity"
       }
     },
     "World": {
@@ -513,6 +518,18 @@
         "ap": "temperature",
         "an": "minHeight",
         "ao": "maxHeight"
+      }
+    },
+    "C01PacketChatMessage": {
+      "name": "lv",
+      "fields": {
+        "a": "message"
+      }
+    },
+    "PacketThreadUtil": {
+      "name": "ih",
+      "methods": {
+        "a(Lie;Lhh;Lvp;)V": "func_180031_a"
       }
     }
   }
