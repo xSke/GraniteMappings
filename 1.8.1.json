@@ -94,8 +94,8 @@
         "k": "generic"
       },
       "methods": {
-      	"p()Ljava/lang/String;": "getDamageType",
-      	"i()Lwx;": "getSourceOfDamage"
+        "p()Ljava/lang/String;": "getDamageType",
+        "i()Lwx;" : "getSourceOfDamage"
       }
     },
     "EntityPlayer": {
@@ -332,12 +332,14 @@
         "z(Ldt;)Z": "isPowered",
         "b(Ldt;Lej;)Z": "isFacePowered",
         "A(Ldt;)I": "isIndirectlyPowered",
-        "b(Ldt;)Larj;": "getBiome"
+        "b(Ldt;)Larj;": "getBiomeGenForCoords"
       },
       "fields": {
         "x": "worldInfo",
         "f": "loadedEntityList",
-        "M": "worldBorder"
+        "M": "worldBorder",
+        "v": "chunkProvider",
+        "t": "provider"
       }
     },
     "WorldServer": {
@@ -497,7 +499,9 @@
       "fields": {
         "a": "xPosition",
         "b": "zPosition",
-        "h": "isChunkLoaded"
+        "h": "isChunkLoaded",
+        "i": "worldObj",
+        "m": "entityLists"
       }
     },
     "EnumFacing": {
@@ -512,14 +516,6 @@
         "b()Lhp;": "func_151521_b"
       }
     },
-    "BiomeGenBase": {
-      "name": "arj",
-      "fields": {
-        "ap": "temperature",
-        "an": "minHeight",
-        "ao": "maxHeight"
-      }
-    },
     "C01PacketChatMessage": {
       "name": "lv",
       "fields": {
@@ -530,6 +526,39 @@
       "name": "ih",
       "methods": {
         "a(Lie;Lhh;Lvp;)V": "func_180031_a"
+      }
+    },
+    "IChunkProvider": {
+      "name": "bfc",
+      "methods": {
+        "d(II)Lbff;": "provideChunk",
+        "a(II)Z": "chunkExists"
+      }
+    },
+    "ChunkProviderServer": {
+      "name": "qt",
+      "methods": {
+        "b(II)V": "dropChunk"
+      },
+      "fields": {
+        "c": "droppedChunksSet"
+      }
+    },
+    "WorldProvider": {
+      "name": "bgb",
+      "fields": {
+        "c": "worldChunkMgr"
+      }
+    },
+    "WorldChunkManager": {
+      "name": "arw"
+    },
+    "BiomeGenBase": {
+      "name": "arj",
+      "fields": {
+        "an": "minHeight",
+        "ao": "maxHeight",
+        "ap": "temperature"
       }
     }
   }
