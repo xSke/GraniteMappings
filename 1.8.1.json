@@ -576,6 +576,9 @@
       "fields": {
         "a": "mainInventory",
         "b": "armorInventory"
+      },
+      "methods": {
+        "h()Lamg;": "getCurrentItem"
       }
     }
   }
