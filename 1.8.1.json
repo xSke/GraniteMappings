@@ -107,7 +107,8 @@
         "bH": "gameProfile",
         "bA": "capabilities",
         "bl": "foodStats",
-        "bk": "openContainer"
+        "bk": "openContainer",
+        "bi": "inventory"
       }
     },
     "EntityPlayerMP": {
@@ -568,6 +569,13 @@
         "B": "name",
         "C": "width",
         "D": "height"
+      }
+      },
+    "InventoryPlayer": {
+      "name": "agy",
+      "fields": {
+        "a": "mainInventory",
+        "b": "armorInventory"
       }
     }
   }
