@@ -561,7 +561,8 @@
       "fields": {
         "an": "minHeight",
         "ao": "maxHeight",
-        "ap": "temperature"
+        "ap": "temperature",
+        "aE": "biomeList"
       }
     },
     "EnumArt": {
@@ -581,6 +582,9 @@
       "methods": {
         "h()Lamg;": "getCurrentItem"
       }
+    },
+    "GameType":{
+      "name": "aqz"
     }
   }
 }
