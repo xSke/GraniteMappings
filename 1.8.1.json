@@ -318,7 +318,8 @@
       "name": "rl",
       "methods": {
         "a(Lie;)V": "sendPacket",
-        "a(Llv;)V": "processChatMessage"
+        "a(Llv;)V": "processChatMessage",
+        "a(Lmh;)V": "processPlayer"
       },
       "fields": {
         "b": "playerEntity"
@@ -583,8 +584,20 @@
         "h()Lamg;": "getCurrentItem"
       }
     },
-    "GameType":{
+    "GameType": {
       "name": "aqz"
+    },
+    "C03PacketPlayer": {
+      "name": "mh",
+      "fields": {
+        "a": "x",
+        "b": "y",
+        "c": "z",
+        "d": "yaw",
+        "e": "pitch",
+        "g": "field_149480_h",
+        "h": "rotating"
+      }
     }
   }
 }
