@@ -334,7 +334,8 @@
         "z(Ldt;)Z": "isPowered",
         "b(Ldt;Lej;)Z": "isFacePowered",
         "A(Ldt;)I": "isIndirectlyPowered",
-        "b(Ldt;)Larj;": "getBiomeGenForCoords"
+        "b(Ldt;)Larj;": "getBiomeGenForCoords",
+        "a(DDDLjava/lang/String;FF)V": "playSoundEffect"
       },
       "fields": {
         "x": "worldInfo",
@@ -560,7 +561,8 @@
       "fields": {
         "an": "minHeight",
         "ao": "maxHeight",
-        "ap": "temperature"
+        "ap": "temperature",
+        "aE": "biomeList"
       }
     },
     "EnumArt": {
@@ -580,6 +582,9 @@
       "methods": {
         "h()Lamg;": "getCurrentItem"
       }
+    },
+    "GameType":{
+      "name": "aqz"
     }
   }
 }
