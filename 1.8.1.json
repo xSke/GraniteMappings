@@ -189,10 +189,9 @@
     "ItemStack": {
       "name": "amg",
       "methods": {
-        "b(Lfn;)Lfn;": "writeToNBT",
-        "a(Lfn;)Lamg;": "loadItemStackFromNBT",
         "b(Lato;)Z": "canHarvestBlock",
-        "a(Laha;Laqr;Ldt;Lej;FFF)Z": "onItemUse"
+        "a(Laha;Laqr;Ldt;Lej;FFF)Z": "onItemUse",
+        "w()Z": "isItemEnchanted"
       },
       "fields": {
         "b": "stackSize",
