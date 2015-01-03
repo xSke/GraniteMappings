@@ -127,7 +127,8 @@
         "b": "shouldDropItem",
         "e": "canPlaceAsBlock",
         "g": "fallHurtMax",
-        "h": "fallHurtAmount"
+        "h": "fallHurtAmount",
+        "d": "field_175132_d"
       }
     },
     "EntityItem": {
