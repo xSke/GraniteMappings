@@ -555,6 +555,11 @@
         "d": "isHellWorld",
         "e": "hasNoSky",
         "g": "dimensionId"
+      },
+      "methods": {
+        "e()Z": "canRespawnHere",
+        "i()I": "getAverageGroundLevel",
+        "k()Ljava/lang/String;": "getDimensionName"
       }
     },
     "WorldProviderSurface": {
