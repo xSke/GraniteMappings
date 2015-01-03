@@ -557,6 +557,15 @@
         "g": "dimensionId"
       }
     },
+    "WorldProviderSurface": {
+      "name": "bge"
+    },
+    "WorldProviderHell": {
+      "name": "bgc"
+    },
+    "WorldProviderEnd": {
+      "name": "bgf"
+    },
     "WorldChunkManager": {
       "name": "arw"
     },
