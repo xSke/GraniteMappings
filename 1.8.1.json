@@ -547,7 +547,10 @@
     "WorldProvider": {
       "name": "bgb",
       "fields": {
-        "c": "worldChunkMgr"
+        "c": "worldChunkMgr",
+        "d": "isHellWorld",
+        "e": "hasNoSky",
+        "g": "dimensionId"
       }
     },
     "WorldChunkManager": {
