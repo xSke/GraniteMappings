@@ -107,13 +107,15 @@
         "bH": "gameProfile",
         "bA": "capabilities",
         "bl": "foodStats",
-        "bk": "openContainer"
+        "bk": "openContainer",
+        "bi": "inventory"
       }
     },
     "EntityPlayerMP": {
       "name": "qx",
       "fields": {
-        "a": "playerNetServerHandler"
+        "a": "playerNetServerHandler",
+        "bI": "translator"
       },
       "methods": {
         "a(Lwj;)V" : "onDeath"
@@ -316,7 +318,8 @@
       "name": "rl",
       "methods": {
         "a(Lie;)V": "sendPacket",
-        "a(Llv;)V": "processChatMessage"
+        "a(Llv;)V": "processChatMessage",
+        "a(Lmh;)V": "processPlayer"
       },
       "fields": {
         "b": "playerEntity"
@@ -332,7 +335,8 @@
         "z(Ldt;)Z": "isPowered",
         "b(Ldt;Lej;)Z": "isFacePowered",
         "A(Ldt;)I": "isIndirectlyPowered",
-        "b(Ldt;)Larj;": "getBiomeGenForCoords"
+        "b(Ldt;)Larj;": "getBiomeGenForCoords",
+        "a(DDDLjava/lang/String;FF)V": "playSoundEffect"
       },
       "fields": {
         "x": "worldInfo",
@@ -561,7 +565,8 @@
       "fields": {
         "an": "minHeight",
         "ao": "maxHeight",
-        "ap": "temperature"
+        "ap": "temperature",
+        "aE": "biomeList"
       }
     },
     "EnumArt": {
@@ -570,6 +575,31 @@
         "B": "name",
         "C": "width",
         "D": "height"
+      }
+      },
+    "InventoryPlayer": {
+      "name": "agy",
+      "fields": {
+        "a": "mainInventory",
+        "b": "armorInventory"
+      },
+      "methods": {
+        "h()Lamg;": "getCurrentItem"
+      }
+    },
+    "GameType": {
+      "name": "aqz"
+    },
+    "C03PacketPlayer": {
+      "name": "mh",
+      "fields": {
+        "a": "x",
+        "b": "y",
+        "c": "z",
+        "d": "yaw",
+        "e": "pitch",
+        "g": "field_149480_h",
+        "h": "rotating"
       }
     }
   }
