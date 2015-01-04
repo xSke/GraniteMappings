@@ -495,8 +495,8 @@
       "name": "wr",
       "fields":{
         "I": "resourceToPotion",
-      	"a": "potionTypes",
-      	"M": "name"
+        "a": "potionTypes",
+        "M": "name"
       },
       "methods": {
       	"b()Z": "isInstant"
