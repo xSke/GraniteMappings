@@ -207,7 +207,8 @@
       },
       "fields": {
         "h": "maxStackSize",
-        "e": "itemRegistry"
+        "e": "itemRegistry",
+        "c": "maxDamage"
       }
     },
     "Block": {
@@ -592,6 +593,7 @@
         "an": "minHeight",
         "ao": "maxHeight",
         "ap": "temperature",
+        "aq": "rainFall",
         "aE": "biomeList",
         "ah": "biomeName"
       }
