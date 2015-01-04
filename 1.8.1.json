@@ -189,6 +189,7 @@
     "ItemStack": {
       "name": "amg",
       "methods": {
+        "b(Lfn;)Lfn;": "writeToNBT",
         "b(Lato;)Z": "canHarvestBlock",
         "a(Laha;Laqr;Ldt;Lej;FFF)Z": "onItemUse",
         "w()Z": "isItemEnchanted"
@@ -580,7 +581,8 @@
         "an": "minHeight",
         "ao": "maxHeight",
         "ap": "temperature",
-        "aE": "biomeList"
+        "aE": "biomeList",
+        "ah": "biomeName"
       }
     },
     "EnumArt": {
