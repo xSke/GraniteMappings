@@ -494,7 +494,7 @@
     "Potion": {
       "name": "wr",
       "fields":{
-        "I": "field_180150_I",
+        "I": "resourceToPotion",
       	"a": "potionTypes",
       	"M": "name"
       },
