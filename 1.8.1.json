@@ -499,7 +499,7 @@
         "M": "name"
       },
       "methods": {
-        "b()Z": "isInstant"
+      	"b()Z": "isInstant"
       }
     },
     "CommandHandler": {
