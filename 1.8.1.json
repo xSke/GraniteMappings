@@ -499,7 +499,7 @@
         "M": "name"
       },
       "methods": {
-      	"b()Z": "isInstant"
+        "b()Z": "isInstant"
       }
     },
     "CommandHandler": {
@@ -518,7 +518,8 @@
         "b": "zPosition",
         "h": "isChunkLoaded",
         "i": "worldObj",
-        "m": "entityLists"
+        "m": "entityLists",
+        "e": "blockBiomeArray"
       }
     },
     "EnumFacing": {
@@ -595,7 +596,8 @@
         "ap": "temperature",
         "aq": "rainFall",
         "aE": "biomeList",
-        "ah": "biomeName"
+        "ah": "biomeName",
+        "az": "biomeID"
       }
     },
     "EnumArt": {
