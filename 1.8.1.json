@@ -491,6 +491,17 @@
         "h": "showParticles"
       }
     },
+    "Potion": {
+      "name": "wr",
+      "fields":{
+        "I": "resourceToPotion",
+        "a": "potionTypes",
+        "M": "name"
+      },
+      "methods": {
+      	"b()Z": "isInstant"
+      }
+    },
     "CommandHandler": {
       "name": "ab",
       "methods": {
