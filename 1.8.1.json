@@ -19,7 +19,8 @@
         "getServerModName()Ljava/lang/String;": "getServerModName",
         "C()V": "startServerThread",
         "s()V": "stopServer",
-        "a(Lsp;)V": "setConfigManager"
+        "a(Lsp;)V": "setConfigManager",
+        "z()V": "tick"
       },
       "fields": {
         "d": "worldServers",
