@@ -45,7 +45,8 @@
         "aN()Z": "getAlwaysRenderNameTag",
         "g(Z)V": "setAlwaysRenderNameTag",
         "e_()Ljava/lang/String;": "getName",
-        "b(DDD)V": "setPosition"
+        "b(DDD)V": "setPosition",
+        "d(DDD)V": "moveEntity"
       },
       "fields": {
         "C": "onGround",
