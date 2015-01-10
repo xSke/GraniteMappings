@@ -498,7 +498,8 @@
       "fields":{
         "I": "resourceToPotion",
         "a": "potionTypes",
-        "M": "name"
+        "M": "name",
+        "H": "id"
       },
       "methods": {
         "b()Z": "isInstant"
