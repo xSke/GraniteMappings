@@ -158,6 +158,33 @@
         "b": "tntTriggeredBy"
       }
     },
+    "EntityHanging": {
+      "name": "adk",
+      "fields": {
+        "b": "facing"
+      },
+      "methods": {
+        "a(Lej;)V": "setFacing"
+      }
+    },
+    "EntityItemFrame": {
+      "name": "adl",
+      "methods": {
+        "o()Lamg;": "getDisplayedItem",
+        "a(Lamg;)V": "setDisplayedItem",
+        "p()I": "getRotation",
+        "a(I)V": "setItemRotation"
+      }
+    },
+    "EntityLightningBolt": {
+      "name": "adt"
+    },
+    "EntityPainting": {
+      "name": "adn",
+      "fields": {
+        "c": "art"
+      }
+    },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
       "fields": {
