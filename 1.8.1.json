@@ -377,7 +377,7 @@
         "a(D)V": "setDiameter",
         "a(DDJ)V": "setTargetAndTime",
         "c(D)V": "setDamageAmount",
-        "b(D)V": "setDamageThreshold",
+        "b(D)V": "setDamageBuffer",
         "b(I)V": "setWarningTime",
         "c(I)V": "setWarningDistance"
       },
@@ -389,7 +389,7 @@
         "f": "endTime",
         "g": "startTime",
         "i": "damageAmount",
-        "j": "damageThreshold",
+        "j": "damageBuffer",
         "k": "warningTime",
         "l": "warningDistance"
       }
