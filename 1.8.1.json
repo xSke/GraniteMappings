@@ -67,17 +67,20 @@
     },
     "EntityLivingBase": {
       "name": "xo",
-      "methods": {
-        "d(Lwj;F)V": "damageEntity",
-        "bn()F": "getHealth",
-        "i(F)V": "setHealth",
-        "bu()F": "getMaxHealth"
-      },
       "fields": {
         "bk": "lastAttacker",
         "aX": "lastDamage",
         "aD": "maxHurtResistantTime",
-        "f": "_combatTracker"
+        "f": "_combatTracker",
+        "g": "activePotions"
+      },
+      "methods": {
+        "d(Lwj;F)V": "damageEntity",
+        "bn()F": "getHealth",
+        "i(F)V": "setHealth",
+        "bu()F": "getMaxHealth",
+        "c(Lws;)V": "addPotionEffect",
+        "m(I)V": "removePotionEffect"
       }
     },
     "EntityLiving": {
@@ -88,6 +91,9 @@
         "bm": "canPickUpLoot",
         "bl": "equipment",
         "bn": "persistenceRequired"
+      },
+      "methods": {
+        "a(Lwx;Z)V": "setLeashedToEntity"
       }
     },
     "DamageSource": {
@@ -371,7 +377,7 @@
         "a(D)V": "setDiameter",
         "a(DDJ)V": "setTargetAndTime",
         "c(D)V": "setDamageAmount",
-        "b(D)V": "setBlockBuffer",
+        "b(D)V": "setDamageThreshold",
         "b(I)V": "setWarningTime",
         "c(I)V": "setWarningDistance"
       },
@@ -383,7 +389,7 @@
         "f": "endTime",
         "g": "startTime",
         "i": "damageAmount",
-        "j": "blockBuffer",
+        "j": "damageThreshold",
         "k": "warningTime",
         "l": "warningDistance"
       }
@@ -487,6 +493,7 @@
     "PotionEffect": {
       "name": "ws",
       "fields": {
+        "b": "potionId",
         "c": "duration",
         "d": "amplifier",
         "f": "isAmbient",
