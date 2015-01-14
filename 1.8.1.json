@@ -93,7 +93,9 @@
         "bn": "persistenceRequired"
       },
       "methods": {
-        "a(Lwx;Z)V": "setLeashedToEntity"
+        "a(Lwx;Z)V": "setLeashedToEntity",
+        "ce()Z": "isAIDisabled",
+        "k(Z)V": "setNoAI"
       }
     },
     "DamageSource": {
@@ -183,6 +185,43 @@
       "name": "adn",
       "fields": {
         "c": "art"
+      }
+    },
+    "EntityArmorStand": {
+      "name": "adj",
+      "fields": {
+        "bk": "headRotation",
+        "bl": "bodyRotation",
+        "bm": "leftArmRotation",
+        "bn": "rightArmRotation",
+        "bo": "leftLegRotation",
+        "bp": "rightLegRotation"
+      },
+      "methods": {
+        "p(I)Lamg;": "getEquipmentInSlot",
+        "c(ILamg;)V": "setCurrentItemOrArmor",
+        "e(Z)V": "setInvisible",
+        "n()Z": "isSmall",
+        "a(Z)V": "setSmall",
+        "p()Z": "hasNoGravity",
+        "j(Z)V": "setNoGravity",
+        "q()Z": "getShowArms",
+        "k(Z)V": "setShowArms",
+        "r()Z": "hasNoBasePlate",
+        "l(Z)V": "setNoBasePlate",
+        "a(Lfa;)V": "setHeadRotation",
+        "b(Lfa;)V": "setBodyRotation",
+        "c(Lfa;)V": "setLeftArmRotation",
+        "d(Lfa;)V": "setRightArmRotation",
+        "e(Lfa;)V": "setLeftLegRotation",
+        "f(Lfa;)V": "setRightLegRotation"
+      }
+    },
+    "EntityBat": {
+      "name": "abr",
+      "methods": {
+        "n()Z": "getIsBatHanging",
+        "a(Z)V": "setIsBatHanging"
       }
     },
     "GameProfile": {
@@ -668,6 +707,14 @@
         "e": "pitch",
         "g": "field_149480_h",
         "h": "rotating"
+      }
+    },
+    "Rotations": {
+      "name": "fa",
+      "fields": {
+        "a": "x",
+        "b": "y",
+        "c": "z"
       }
     }
   }
