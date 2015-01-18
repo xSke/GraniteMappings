@@ -346,7 +346,7 @@
       "name": "ev",
       "methods": {
         "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject",
-        "a(I)Ljava/lang/Object;": "getIDForObject"
+        "b(Ljava/lang/Object;)I": "getIDForObject"
       }
     },
     "ResourceLocation": {
