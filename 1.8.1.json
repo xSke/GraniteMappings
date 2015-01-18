@@ -217,6 +217,14 @@
         "f(Lfa;)V": "setRightLegRotation"
       }
     },
+    "EntityAgeable": {
+      "name": "wu",
+      "methods": {
+        "l()I": "getGrowingAge",
+        "b(I)V": "setGrowingAge",
+        "a(Z)V": "setScaleForAge"
+      }
+    },
     "EntityBat": {
       "name": "abr",
       "methods": {
@@ -337,7 +345,8 @@
     "RegistryNamespaced": {
       "name": "ev",
       "methods": {
-        "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject"
+        "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject",
+        "a(I)Ljava/lang/Object;": "getIDForObject"
       }
     },
     "ResourceLocation": {
@@ -683,7 +692,7 @@
         "C": "width",
         "D": "height"
       }
-      },
+    },
     "InventoryPlayer": {
       "name": "agy",
       "fields": {
