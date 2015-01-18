@@ -62,7 +62,8 @@
         "aq": "entityUniqueID",
         "X": "fireResistance",
         "o": "worldObj",
-        "Z": "hurtResistantTime"
+        "Z": "hurtResistantTime",
+        "ac": "dataWatcher"
       }
     },
     "EntityLivingBase": {
@@ -692,7 +693,7 @@
         "C": "width",
         "D": "height"
       }
-    },
+      },
     "InventoryPlayer": {
       "name": "agy",
       "fields": {
@@ -728,6 +729,30 @@
     },
     "S2APacketParticles": {
       "name": "jv"
+    },
+    "EnumParticleTypes": {
+      "name": "ew"
+    },
+    "EntityArrow": {
+      "name": "ahg",
+      "fields": {
+        "c": "shootingEntity",
+        "at": "damage",
+        "au": "knockbackStrength"
+      }
+    },
+    "DataWatcher": {
+      "name": "xy",
+      "methods": {
+        "j(I)Lxz;": "getWatchedObject",
+        "b(ILjava/lang/Object;)V": "updateObject"
+      }
+    },
+    "DataWatcher$WatchableObject": {
+      "name": "xz",
+      "fields": {
+        "c": "watchedObject"
+      }
     }
   }
 }
