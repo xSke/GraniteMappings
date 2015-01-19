@@ -753,6 +753,18 @@
       "fields": {
         "c": "watchedObject"
       }
+    },
+    "EntityThrowable": {
+      "name": "aho",
+      "methods": {
+        "n()Lxo;": "getThrower"
+      },
+      "fields": {
+        "g": "thrower"
+      }
+    },
+    "EntityEgg": {
+      "name": "ahp"
     }
   }
 }
