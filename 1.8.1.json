@@ -46,7 +46,8 @@
         "g(Z)V": "setAlwaysRenderNameTag",
         "e_()Ljava/lang/String;": "getName",
         "b(DDD)V": "setPosition",
-        "d(DDD)V": "moveEntity"
+        "d(DDD)V": "moveEntity",
+        "a(Lwj;F)Z": "attackEntityFrom"
       },
       "fields": {
         "C": "onGround",
@@ -764,7 +765,31 @@
       }
     },
     "EntityEgg": {
-      "name": "ahp"
+      "name": "ahp",
+      "methods": {
+        "a(Lbrs;)V": "onImpact"
+      }
+    },
+    "EntityFireball": {
+      "name": "ahi",
+      "fields": {
+        "a": "shootingEntity"
+      }
+    },
+    "EntityLargeFireball": {
+      "name": "ahk",
+      "methods": {
+        "a(Lbrs;)V": "onImpact"
+      },
+      "fields": {
+        "e": "field_92057_e"
+      }
+    },
+    "EntitySmallFireball": {
+      "name": "ahm",
+      "methods": {
+        "a(Lbrs;)V": "onImpact"
+      }
     }
   }
 }
