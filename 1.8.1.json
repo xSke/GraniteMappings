@@ -45,9 +45,10 @@
         "aN()Z": "getAlwaysRenderNameTag",
         "g(Z)V": "setAlwaysRenderNameTag",
         "e_()Ljava/lang/String;": "getName",
-        "b(DDD)V": "setPosition",
+        "a(DDD)V": "setPositionAndUpdate",
         "d(DDD)V": "moveEntity",
-        "a(Lwj;F)Z": "attackEntityFrom"
+        "a(Lwj;F)Z": "attackEntityFrom",
+        "c(I)V": "travelToDimension"
       },
       "fields": {
         "C": "onGround",
@@ -64,7 +65,9 @@
         "X": "fireResistance",
         "o": "worldObj",
         "Z": "hurtResistantTime",
-        "ac": "dataWatcher"
+        "ac": "dataWatcher",
+        "A": "rotationYaw",
+        "B": "rotationPitch"
       }
     },
     "EntityLivingBase": {
@@ -789,6 +792,12 @@
       "name": "ahm",
       "methods": {
         "a(Lbrs;)V": "onImpact"
+      }
+    },
+    "DerivedWorldInfo": {
+      "name": "bqj",
+      "fields": {
+        "b": "theWorldInfo"
       }
     }
   }
