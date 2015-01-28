@@ -150,6 +150,11 @@
       "name": "adx",
       "methods": {
         "l()Lamg;": "getEntityItem"
+      },
+      "fields": {
+        "c": "age",
+        "d": "delayBeforeCanPickup",
+        "f": "thrower"
       }
     },
     "EntityXPOrb": {
