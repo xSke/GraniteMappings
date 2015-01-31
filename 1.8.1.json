@@ -242,6 +242,78 @@
         "a(Z)V": "setIsBatHanging"
       }
     },
+    "EntityChicken": {
+      "name": "abu"
+    },
+    "EntityCow": {
+      "name": "abv"
+    },
+    "EntityHorse": {
+      "name": "abw",
+      "fields": {
+        "bE": "animalChest"
+      },
+      "methods": {
+        "cm()I": "getHorseVariant",
+        "s(I)V": "setHorseVariant",
+        "cl()I": "getHorseType",
+        "r(I)V": "setHorseType"
+      }
+    },
+    "EntityMooshroom": {
+      "name": "aca"
+    },
+    "EntityOcelot": {
+      "name": "acb",
+      "methods": {
+        "ct()I": "getOcelotType",
+        "r(I)V": "setOcelotType"
+      }
+    },
+    "EntityPig": {
+      "name": "acc",
+      "methods": {
+        "cl()Z": "isSaddled",
+        "l(Z)V": "setSaddled"
+      }
+    },
+    "EntityRabbit": {
+      "name": "acd",
+      "methods": {
+        "cn()I": "getRabbitType",
+        "r(I)V": "setRabbitType"
+      }
+    },
+    "EntitySheep": {
+      "name": "acm",
+      "methods": {
+        "cm()Z": "getSheared",
+        "l(Z)V": "setSheared",
+        "cl()Laks;": "getColor",
+        "b(Laks;)V": "setColor"
+      }
+    },
+    "EntitySquid": {
+      "name": "acp"
+    },
+    "EntityWolf": {
+      "name": "acv",
+      "methods": {
+        "cw()Laks;": "getColor",
+        "a(Laks;)V": "setColor"
+      }
+    },
+    "EntityTameable": {
+      "name": "ya",
+      "methods": {
+        "cl()Z": "isTamed",
+        "m(Z)V": "setTamed",
+        "cn()Z": "isSitting",
+        "n(Z)V": "setSitting",
+        "co()Lxo;": "getOwner",
+        "b(Ljava/lang/String;)V": "setOwner"
+      }
+    },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
       "fields": {
@@ -803,6 +875,21 @@
       "name": "bqj",
       "fields": {
         "b": "theWorldInfo"
+      }
+    },
+    "AnimalChest": {
+      "name": "ahz"
+    },
+    "InventoryBasic": {
+      "name": "wc",
+      "fields": {
+        "c": "inventoryContents"
+      }
+    },
+    "EnumDyeColor": {
+      "name": "aks",
+      "fields": {
+        "t": "damage"
       }
     }
   }
