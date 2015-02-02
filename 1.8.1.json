@@ -503,7 +503,8 @@
         "b(Ldt;Lej;)Z": "isFacePowered",
         "A(Ldt;)I": "isIndirectlyPowered",
         "b(Ldt;)Larj;": "getBiomeGenForCoords",
-        "a(DDDLjava/lang/String;FF)V": "playSoundEffect"
+        "a(DDDLjava/lang/String;FF)V": "playSoundEffect",
+        "s(Ldt;)Lbck;": "getTileEntity"
       },
       "fields": {
         "x": "worldInfo",
@@ -890,6 +891,19 @@
       "name": "aks",
       "fields": {
         "t": "damage"
+      }
+    },
+    "TileEntity": {
+      "name": "bck",
+      "fields": {
+        "b": "worldObj",
+        "c": "pos"
+      }
+    },
+    "TileEntitySign": {
+      "name": "bdh",
+      "fields": {
+        "a": "signText"
       }
     }
   }
