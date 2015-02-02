@@ -189,7 +189,10 @@
       }
     },
     "EntityLightningBolt": {
-      "name": "adt"
+      "name": "adt",
+      "methods": {
+        "t_()V": "onUpdate"
+      }
     },
     "EntityPainting": {
       "name": "adn",
@@ -905,6 +908,9 @@
       "fields": {
         "a": "signText"
       }
+    },
+    "AxisAlignedBB" : {
+      "name": "brr"
     }
   }
 }
