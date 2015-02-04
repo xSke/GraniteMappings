@@ -238,6 +238,9 @@
         "a(Z)V": "setScaleForAge"
       }
     },
+    "EntityAnimal": {
+      "name": "abt"
+    },
     "EntityBat": {
       "name": "abr",
       "methods": {
@@ -911,6 +914,9 @@
     },
     "AxisAlignedBB" : {
       "name": "brr"
+    },
+    "EntityWeatherEffect": {
+      "name": "ads"
     }
   }
 }
