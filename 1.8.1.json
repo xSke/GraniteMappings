@@ -187,9 +187,7 @@
     "EntityItemFrame": {
       "name": "adl",
       "methods": {
-        "o()Lamg;": "getDisplayedItem",
         "a(Lamg;)V": "setDisplayedItem",
-        "p()I": "getRotation",
         "a(I)V": "setItemRotation"
       }
     },
