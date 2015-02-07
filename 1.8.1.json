@@ -103,6 +103,9 @@
         "k(Z)V": "setNoAI"
       }
     },
+    "EntityWaterMob": {
+      "name": "acu"
+    },
     "DamageSource": {
       "name": "wj",
       "fields": {
@@ -187,6 +190,9 @@
         "p()I": "getRotation",
         "a(I)V": "setItemRotation"
       }
+    },
+    "EntityLeashKnot": {
+      "name": "adm"
     },
     "EntityLightningBolt": {
       "name": "adt",
