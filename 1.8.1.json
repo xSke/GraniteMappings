@@ -81,8 +81,6 @@
       },
       "methods": {
         "d(Lwj;F)V": "damageEntity",
-        "bn()F": "getHealth",
-        "i(F)V": "setHealth",
         "bu()F": "getMaxHealth",
         "c(Lws;)V": "addPotionEffect",
         "m(I)V": "removePotionEffect"
@@ -98,10 +96,14 @@
         "bn": "persistenceRequired"
       },
       "methods": {
-        "a(Lwx;Z)V": "setLeashedToEntity",
-        "ce()Z": "isAIDisabled",
-        "k(Z)V": "setNoAI"
+        "a(Lwx;Z)V": "setLeashedToEntity"
       }
+    },
+    "EntityCreature": {
+      "name": "xx"
+    },
+    "EntityAmbientCreature": {
+      "name": "abq"
     },
     "EntityWaterMob": {
       "name": "acu"
@@ -113,7 +115,7 @@
       },
       "methods": {
         "p()Ljava/lang/String;": "getDamageType",
-        "i()Lwx;" : "getSourceOfDamage"
+        "i()Lwx;": "getSourceOfDamage"
       }
     },
     "EntityPlayer": {
@@ -136,7 +138,7 @@
         "bI": "translator"
       },
       "methods": {
-        "a(Lwj;)V" : "onDeath"
+        "a(Lwj;)V": "onDeath"
       }
     },
     "EntityFallingBlock": {
@@ -209,31 +211,11 @@
     "EntityArmorStand": {
       "name": "adj",
       "fields": {
-        "bk": "headRotation",
-        "bl": "bodyRotation",
-        "bm": "leftArmRotation",
-        "bn": "rightArmRotation",
-        "bo": "leftLegRotation",
-        "bp": "rightLegRotation"
+        "h": "canInteract"
       },
       "methods": {
         "p(I)Lamg;": "getEquipmentInSlot",
-        "c(ILamg;)V": "setCurrentItemOrArmor",
-        "e(Z)V": "setInvisible",
-        "n()Z": "isSmall",
-        "a(Z)V": "setSmall",
-        "p()Z": "hasNoGravity",
-        "j(Z)V": "setNoGravity",
-        "q()Z": "getShowArms",
-        "k(Z)V": "setShowArms",
-        "r()Z": "hasNoBasePlate",
-        "l(Z)V": "setNoBasePlate",
-        "a(Lfa;)V": "setHeadRotation",
-        "b(Lfa;)V": "setBodyRotation",
-        "c(Lfa;)V": "setLeftArmRotation",
-        "d(Lfa;)V": "setRightArmRotation",
-        "e(Lfa;)V": "setLeftLegRotation",
-        "f(Lfa;)V": "setRightLegRotation"
+        "c(ILamg;)V": "setCurrentItemOrArmor"
       }
     },
     "EntityAgeable": {
@@ -248,11 +230,7 @@
       "name": "abt"
     },
     "EntityBat": {
-      "name": "abr",
-      "methods": {
-        "n()Z": "getIsBatHanging",
-        "a(Z)V": "setIsBatHanging"
-      }
+      "name": "abr"
     },
     "EntityChicken": {
       "name": "abu"
@@ -264,67 +242,31 @@
       "name": "abw",
       "fields": {
         "bE": "animalChest"
-      },
-      "methods": {
-        "cm()I": "getHorseVariant",
-        "s(I)V": "setHorseVariant",
-        "cl()I": "getHorseType",
-        "r(I)V": "setHorseType"
       }
     },
     "EntityMooshroom": {
       "name": "aca"
     },
     "EntityOcelot": {
-      "name": "acb",
-      "methods": {
-        "ct()I": "getOcelotType",
-        "r(I)V": "setOcelotType"
-      }
+      "name": "acb"
     },
     "EntityPig": {
-      "name": "acc",
-      "methods": {
-        "cl()Z": "isSaddled",
-        "l(Z)V": "setSaddled"
-      }
+      "name": "acc"
     },
     "EntityRabbit": {
-      "name": "acd",
-      "methods": {
-        "cn()I": "getRabbitType",
-        "r(I)V": "setRabbitType"
-      }
+      "name": "acd"
     },
     "EntitySheep": {
-      "name": "acm",
-      "methods": {
-        "cm()Z": "getSheared",
-        "l(Z)V": "setSheared",
-        "cl()Laks;": "getColor",
-        "b(Laks;)V": "setColor"
-      }
+      "name": "acm"
     },
     "EntitySquid": {
       "name": "acp"
     },
     "EntityWolf": {
-      "name": "acv",
-      "methods": {
-        "cw()Laks;": "getColor",
-        "a(Laks;)V": "setColor"
-      }
+      "name": "acv"
     },
     "EntityTameable": {
-      "name": "ya",
-      "methods": {
-        "cl()Z": "isTamed",
-        "m(Z)V": "setTamed",
-        "cn()Z": "isSitting",
-        "n(Z)V": "setSitting",
-        "co()Lxo;": "getOwner",
-        "b(Ljava/lang/String;)V": "setOwner"
-      }
+      "name": "ya"
     },
     "GameProfile": {
       "name": "com.mojang.authlib.GameProfile",
@@ -672,7 +614,7 @@
     },
     "Potion": {
       "name": "wr",
-      "fields":{
+      "fields": {
         "I": "resourceToPotion",
         "a": "potionTypes",
         "M": "name",
@@ -787,7 +729,7 @@
         "C": "width",
         "D": "height"
       }
-      },
+    },
     "InventoryPlayer": {
       "name": "agy",
       "fields": {
@@ -918,7 +860,7 @@
         "a": "signText"
       }
     },
-    "AxisAlignedBB" : {
+    "AxisAlignedBB": {
       "name": "brr"
     },
     "EntityWeatherEffect": {
