@@ -839,10 +839,18 @@
         "c": "inventoryContents"
       }
     },
+    "EnumBannerPattern": {
+      "name": "bch",
+      "fields": {
+        "N": "name",
+        "O": "id"
+      }
+    },
     "EnumDyeColor": {
       "name": "aks",
       "fields": {
-        "t": "damage"
+        "t": "damage",
+        "u": "name"
       }
     },
     "TileEntity": {
