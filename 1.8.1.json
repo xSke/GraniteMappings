@@ -871,6 +871,57 @@
     },
     "EntityWeatherEffect": {
       "name": "ads"
+    },
+    "MerchantRecipe": {
+      "name": "apz",
+      "fields": {
+        "a": "firstItemToBuy",
+        "b": "secondItemToBuy",
+        "c": "itemToSell",
+        "d": "uses",
+        "e": "maxUses",
+        "f": "grantExperience"
+      }
+    },
+    "MerchantRecipeList": {
+      "name": "apa"
+    },
+    "EntityDragon": {
+      "name": "adc",
+      "fields": {
+        "bz": "healingEnderCrystal",
+        "bm": "dragonPartArray"
+      }
+    },
+    "EntityDragonPart": {
+      "name": "ada",
+      "fields": {
+        "a": "entityDragonObj"
+      }
+    },
+    "EntityEnderCrystal": {
+      "name": "adb"
+    },
+    "EntityGolem": {
+      "name": "abz"
+    },
+    "EntityIronGolem": {
+      "name": "acr"
+    },
+    "EntitySnowGolem": {
+      "name": "aco"
+    },
+    "EntityVillager": {
+      "name": "agn",
+      "fields": {
+        "bp": "isPlaying",
+        "bq": "buyingPlayer",
+        "bx": "career",
+        "br": "buyingList"
+      },
+      "methods": {
+        "a(Laha;)Z": "interact"
+      }
     }
   }
 }
