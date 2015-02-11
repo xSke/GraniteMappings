@@ -341,7 +341,9 @@
       "methods": {
         "f()Ljava/lang/String;": "getUnlocalizedName",
         "a(I)Lbea;": "getStateFromMeta",
+        "d(I)Lbea;": "getStateFromId",
         "c(Lbea;)I": "getMetaFromState",
+        "f(Lbea;)I": "getStateId",
         "d()Z": "isSolidFullCube",
         "a(Laqr;Ldt;)Z": "isReplaceable"
       }
@@ -732,10 +734,8 @@
       "name": "agy",
       "fields": {
         "a": "mainInventory",
-        "b": "armorInventory"
-      },
-      "methods": {
-        "h()Lamg;": "getCurrentItem"
+        "b": "armorInventory",
+        "c": "currentItem"
       }
     },
     "GameType": {
@@ -921,6 +921,88 @@
       },
       "methods": {
         "a(Laha;)Z": "interact"
+      }
+    },
+    "EntityFlying": {
+      "name": "xn"
+    },
+    "EntityMob": {
+      "name": "afm"
+    },
+    "EntityBlaze": {
+      "name": "aen"
+    },
+    "EntityCaveSpider": {
+      "name": "aep"
+    },
+    "EntityCreeper": {
+      "name": "aeq",
+      "fields": {
+      "a": "lastActiveTime",
+      "b": "timeSinceIgnited",
+      "c": "fuseTime",
+      "bm": "explosionRadius"
+      },
+      "methods": {
+      "cr()V": "detonate"
+      }
+    },
+    "EntityEnderman": {
+      "name": "aer"
+    },
+    "EntityEndermite": {
+      "name": "aew",
+      "fields": {
+        "b": "playerSpawned"
+      }
+    },
+    "EntityGhast": {
+      "name": "afa"
+    },
+    "EntityGiantZombie": {
+      "name": "aff"
+    },
+    "EntityGuardian": {
+      "name": "afg"
+    },
+    "EntityMagmaCube": {
+      "name": "afl"
+    },
+    "EntityPigZombie": {
+      "name": "afn",
+      "fields": {
+        "bm": "angerLevel"
+      }
+    },
+    "EntitySilverfish": {
+      "name": "afs"
+    },
+    "EntitySkeleton": {
+      "name": "afv",
+      "methods": {
+        "a(I)V": "setSkeletonType"
+      }
+    },
+    "EntitySlime": {
+      "name": "afw",
+      "methods": {
+        "a(I)V": "setSlimeSize"
+      }
+    },
+    "EntitySpider": {
+      "name": "agc"
+    },
+    "EntityWitch": {
+      "name": "agg"
+    },
+    "EntityWither": {
+      "name": "adg"
+    },
+    "EntityZombie": {
+      "name": "agh",
+      "methods": {
+        "l(Z)V": "setChild",
+        "n(Z)V": "setScale"
       }
     }
   }
