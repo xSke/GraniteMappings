@@ -441,7 +441,8 @@
         "a(Lie;)V": "sendPacket",
         "a(Llv;)V": "processChatMessage",
         "a(Lmh;)V": "processPlayer",
-        "a(Lmy;)V": "processPlayerBlockPlacement"
+        "a(Lmy;)V": "processPlayerBlockPlacement",
+        "a(Lmm;)V": "processPlayerDigging"
       },
       "fields": {
         "b": "playerEntity"
@@ -1013,6 +1014,12 @@
         "e": "facingX",
         "f": "facingY",
         "g": "facingZ"
+      }
+    },
+    "C07PacketPlayerDigging": {
+      "name": "mm",
+      "fields": {
+        "a": "field_179717_a"
       }
     }
   }
