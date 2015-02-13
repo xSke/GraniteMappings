@@ -440,7 +440,8 @@
       "methods": {
         "a(Lie;)V": "sendPacket",
         "a(Llv;)V": "processChatMessage",
-        "a(Lmh;)V": "processPlayer"
+        "a(Lmh;)V": "processPlayer",
+        "a(Lmy;)V": "processPlayerBlockPlacement"
       },
       "fields": {
         "b": "playerEntity"
@@ -1003,6 +1004,15 @@
       "methods": {
         "l(Z)V": "setChild",
         "n(Z)V": "setScale"
+      }
+    },
+    "C08PacketPlayerBlockPlacement": {
+      "name": "my",
+      "fields": {
+        "b": "field_179725_b",
+        "e": "facingX",
+        "f": "facingY",
+        "g": "facingZ"
       }
     }
   }
