@@ -738,6 +738,9 @@
         "a": "mainInventory",
         "b": "armorInventory",
         "c": "currentItem"
+      },
+      "methods": {
+        "h()Lamg;": "getCurrentItem"
       }
     },
     "GameType": {
