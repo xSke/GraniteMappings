@@ -77,9 +77,11 @@
         "aX": "lastDamage",
         "aD": "maxHurtResistantTime",
         "f": "_combatTracker",
-        "g": "activePotions"
+        "g": "activePotions",
+        "c": "attributeMap"
       },
       "methods": {
+        "K()V": "onEntityUpdate",
         "d(Lwj;F)V": "damageEntity",
         "bu()F": "getMaxHealth",
         "c(Lws;)V": "addPotionEffect",
@@ -128,7 +130,10 @@
         "bA": "capabilities",
         "bl": "foodStats",
         "bk": "openContainer",
-        "bi": "inventory"
+        "bi": "inventory",
+        "bB": "experienceLevel",
+        "bC": "experienceTotal",
+        "bD": "experience"
       }
     },
     "EntityPlayerMP": {
@@ -738,9 +743,6 @@
         "a": "mainInventory",
         "b": "armorInventory",
         "c": "currentItem"
-      },
-      "methods": {
-        "h()Lamg;": "getCurrentItem"
       }
     },
     "GameType": {
@@ -943,13 +945,13 @@
     "EntityCreeper": {
       "name": "aeq",
       "fields": {
-      "a": "lastActiveTime",
-      "b": "timeSinceIgnited",
-      "c": "fuseTime",
-      "bm": "explosionRadius"
+        "a": "lastActiveTime",
+        "b": "timeSinceIgnited",
+        "c": "fuseTime",
+        "bm": "explosionRadius"
       },
       "methods": {
-      "cr()V": "detonate"
+        "cr()V": "detonate"
       }
     },
     "EntityEnderman": {
@@ -1005,9 +1007,47 @@
     },
     "EntityZombie": {
       "name": "agh",
+      "fields": {
+        "a": "reinforcementsAttribute"
+      },
       "methods": {
         "l(Z)V": "setChild",
         "n(Z)V": "setScale"
+      }
+    },
+    "BaseAttributeMap": {
+      "name": "yf",
+      "methods": {
+        "a(Lyb;)Lyc;": "getAttributeInstance"
+      }
+    },
+    "BaseAttribute": {
+      "name": "ye"
+    },
+    "ModifiableAttributeInstance": {
+      "name": "yh",
+      "methods": {
+        "a(D)V": "setBaseValue",
+        "e()D": "getAttributeValue"
+      }
+    },
+    "MinecraftProtocolVersionIdentifier": {
+      "name": "nu",
+      "fields": {
+        "a": "name",
+        "b": "protocol"
+      }
+    },
+    "NetHandlerHandshakeTCP": {
+      "name": "rq",
+      "methods": {
+        "a(Lna;)V": "processHandshake"
+      }
+    },
+    "NetworkManager": {
+      "name": "gr",
+      "fields": {
+        "k": "socketAddress"
       }
     },
     "C08PacketPlayerBlockPlacement": {
@@ -1024,6 +1064,17 @@
       "fields": {
         "a": "field_179717_a"
       }
+    },
+    "C00Handshake": {
+      "name": "na",
+      "fields": {
+        "a": "protocolVersion",
+        "b": "ip",
+        "c": "port"
+      }
+    },
+    "ChatComponentText": {
+      "name": "hz"
     }
   }
 }
