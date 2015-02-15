@@ -1040,6 +1040,9 @@
     },
     "NetHandlerHandshakeTCP": {
       "name": "rq",
+      "fields": {
+        "b": "networkManager"
+      },
       "methods": {
         "a(Lna;)V": "processHandshake"
       }
