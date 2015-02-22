@@ -1262,17 +1262,26 @@
       }
     },
     "EntityEnderPearl": {
-      "name": "xb"
+      "name": "xb",
+      "methods": {
+        "a(Laui;)V": "onImpact"
+      }
     },
     "EntityFishHook": {
       "name": "us",
       "fields": {
         "b": "angler",
         "c": "caughtEntity"
+      },
+      "methods": {
+        "t_()V": "onUpdate"
       }
     },
     "EntitySnowball": {
-      "name": "wy"
+      "name": "wy",
+      "methods": {
+        "a(Laui;)V": "onImpact"
+      }
     },
     "EntityEnderEye": {
       "name": "ws",
