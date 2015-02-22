@@ -1,0 +1,1305 @@
+{
+  "classes": {
+    "Entity": {
+      "name": "pl",
+      "methods": {
+        "d(DDD)V": "moveEntity",
+        "a(Ljava/lang/String;)V": "setCustomNameTag",
+        "e_()Ljava/lang/String;": "getName",
+        "a(Lpl;)V": "mountEntity",
+        "h(I)V": "setAir",
+        "aS()F": "getEyeHeight",
+        "g(Z)V": "setAlwaysRenderNameTag",
+        "aM()Ljava/lang/String;": "getCustomNameTag",
+        "c(I)V": "travelToDimension",
+        "a(Lox;F)Z": "attackEntityFrom",
+        "aN()Z": "getAlwaysRenderNameTag",
+        "a(DDD)V": "setPositionAndUpdate",
+        "az()I": "getAir"
+      },
+      "fields": {
+        "ac": "dataWatcher",
+        "A": "rotationYaw",
+        "l": "riddenByEntity",
+        "m": "ridingEntity",
+        "aq": "entityUniqueID",
+        "o": "worldObj",
+        "I": "isDead",
+        "s": "posX",
+        "t": "posY",
+        "B": "rotationPitch",
+        "u": "posZ",
+        "C": "onGround",
+        "X": "fireResistance",
+        "Z": "hurtResistantTime",
+        "J": "width",
+        "i": "fire",
+        "K": "height"
+      }
+    },
+    "EntityMooshroom": {
+      "name": "ts",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityCaveSpider": {
+      "name": "vn",
+      "methods": {},
+      "fields": {}
+    },
+    "PotionEffect": {
+      "name": "pg",
+      "methods": {},
+      "fields": {
+        "c": "duration",
+        "h": "showParticles",
+        "d": "amplifier",
+        "f": "isAmbient",
+        "b": "potionId"
+      }
+    },
+    "C08PacketPlayerBlockPlacement": {
+      "name": "jb",
+      "methods": {},
+      "fields": {
+        "g": "facingZ",
+        "e": "facingX",
+        "b": "position",
+        "f": "facingY"
+      }
+    },
+    "ServerConfigurationManager": {
+      "name": "ly",
+      "methods": {
+        "a(Lel;Llg;)V": "initializeConnectionToPlayer",
+        "a(Lev;)V": "sendChatMsg",
+        "c(Llg;)V": "playerLoggedIn"
+      },
+      "fields": {
+        "i": "playerEntityList",
+        "e": "maxPlayers",
+        "q": "whitelistEnforced"
+      }
+    },
+    "NBTTagCompound": {
+      "name": "dp",
+      "methods": {},
+      "fields": {}
+    },
+    "BlockFalling": {
+      "name": "ags",
+      "methods": {},
+      "fields": {}
+    },
+    "WorldServer": {
+      "name": "lf",
+      "methods": {},
+      "fields": {}
+    },
+    "CommandHandler": {
+      "name": "k",
+      "methods": {
+        "a(Ln;Ljava/lang/String;)I": "executeCommand"
+      },
+      "fields": {}
+    },
+    "GameType": {
+      "name": "adq$a",
+      "methods": {},
+      "fields": {}
+    },
+    "MerchantRecipeList": {
+      "name": "ach",
+      "methods": {},
+      "fields": {}
+    },
+    "Item": {
+      "name": "zx",
+      "methods": {
+        "a(Lzy;Lafi;)F": "getStrVsBlock"
+      },
+      "fields": {
+        "e": "itemRegistry",
+        "h": "maxStackSize",
+        "c": "maxDamage"
+      }
+    },
+    "EntityHorse": {
+      "name": "tq",
+      "methods": {},
+      "fields": {
+        "bE": "animalChest"
+      }
+    },
+    "IProperty": {
+      "name": "amp",
+      "methods": {
+        "c()Ljava/util/Collection;": "getAllowedValues"
+      },
+      "fields": {}
+    },
+    "EntityVillager": {
+      "name": "wj",
+      "methods": {
+        "a(Lwo;)Z": "interact"
+      },
+      "fields": {
+        "bp": "isPlaying",
+        "bx": "career",
+        "bq": "buyingPlayer",
+        "br": "buyingList"
+      }
+    },
+    "IChatComponent": {
+      "name": "ev",
+      "methods": {},
+      "fields": {}
+    },
+    "WorldInfo": {
+      "name": "atp",
+      "methods": {},
+      "fields": {
+        "b": "randomSeed",
+        "K": "gameRules",
+        "n": "levelName",
+        "m": "dimension"
+      }
+    },
+    "DerivedWorldInfo": {
+      "name": "atm",
+      "methods": {},
+      "fields": {
+        "b": "theWorldInfo"
+      }
+    },
+    "EntityWither": {
+      "name": "ul",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityGuardian": {
+      "name": "vu",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityTameable": {
+      "name": "qb",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityFireball": {
+      "name": "wt",
+      "methods": {},
+      "fields": {
+        "a": "shootingEntity"
+      }
+    },
+    "EntityDragon": {
+      "name": "uh",
+      "methods": {},
+      "fields": {
+        "bm": "dragonPartArray",
+        "bz": "healingEnderCrystal"
+      }
+    },
+    "EntityFallingBlock": {
+      "name": "uz",
+      "methods": {},
+      "fields": {
+        "h": "fallHurtAmount",
+        "d": "block",
+        "b": "shouldDropItem",
+        "e": "canPlaceAsBlock",
+        "g": "fallHurtMax"
+      }
+    },
+    "EntityItemFrame": {
+      "name": "up",
+      "methods": {
+        "a(I)V": "setItemRotation",
+        "a(Lzy;)V": "setDisplayedItem"
+      },
+      "fields": {}
+    },
+    "IBlockState": {
+      "name": "ama",
+      "methods": {
+        "a(Lamp;Ljava/lang/Comparable;)Lama;": "withProperty"
+      },
+      "fields": {}
+    },
+    "EntityList": {
+      "name": "pn",
+      "methods": {
+        "a(Ljava/lang/String;Ladn;)Lpl;": "createEntityByName"
+      },
+      "fields": {
+        "d": "classToStringMapping"
+      }
+    },
+    "ItemBlock": {
+      "name": "yp",
+      "methods": {},
+      "fields": {
+        "a": "block"
+      }
+    },
+    "GameProfile": {
+      "name": "com.mojang.authlib.GameProfile",
+      "methods": {},
+      "fields": {
+        "name": "name",
+        "id": "id"
+      }
+    },
+    "EntityZombie": {
+      "name": "wf",
+      "methods": {
+        "l(Z)V": "setChild",
+        "n(Z)V": "setScale"
+      },
+      "fields": {
+        "a": "reinforcementsAttribute"
+      }
+    },
+    "EntityRabbit": {
+      "name": "tv",
+      "methods": {},
+      "fields": {}
+    },
+    "EntitySheep": {
+      "name": "tw",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityPlayer": {
+      "name": "wo",
+      "methods": {
+        "b(Lev;)V": "addChatComponentMessage"
+      },
+      "fields": {
+        "bA": "capabilities",
+        "bk": "openContainer",
+        "bl": "foodStats",
+        "bi": "inventory",
+        "bH": "gameProfile",
+        "bB": "experienceLevel",
+        "bC": "experienceTotal",
+        "bD": "experience"
+      }
+    },
+    "C03PacketPlayer": {
+      "name": "iq",
+      "methods": {},
+      "fields": {
+        "h": "rotating",
+        "a": "x",
+        "b": "y",
+        "c": "z",
+        "e": "pitch",
+        "d": "yaw",
+        "g": "isPosition"
+      }
+    },
+    "S45PacketTitle": {
+      "name": "hw",
+      "methods": {},
+      "fields": {}
+    },
+    "ItemStack": {
+      "name": "zy",
+      "methods": {
+        "w()Z": "isItemEnchanted",
+        "b(Lafi;)Z": "canHarvestBlock",
+        "a(Lwo;Ladn;Lck;Lcr;FFF)Z": "onItemUse",
+        "b(Ldp;)Ldp;": "writeToNBT"
+      },
+      "fields": {
+        "f": "itemDamage",
+        "d": "item",
+        "b": "stackSize"
+      }
+    },
+    "EntityMagmaCube": {
+      "name": "vv",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityCreature": {
+      "name": "pz",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityLeashKnot": {
+      "name": "uq",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityTNTPrimed": {
+      "name": "vk",
+      "methods": {},
+      "fields": {
+        "a": "fuse",
+        "b": "tntTriggeredBy"
+      }
+    },
+    "EnumFacing": {
+      "name": "cr",
+      "methods": {},
+      "fields": {
+        "m": "directionVec"
+      }
+    },
+    "EnumSkyBlock": {
+      "name": "adt",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityOcelot": {
+      "name": "tt",
+      "methods": {},
+      "fields": {}
+    },
+    "EnumBannerPattern": {
+      "name": "akv$a",
+      "methods": {},
+      "fields": {
+        "N": "name",
+        "O": "id"
+      }
+    },
+    "EntityBlaze": {
+      "name": "vm",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityEgg": {
+      "name": "xa",
+      "methods": {
+        "a(Laui;)V": "onImpact"
+      },
+      "fields": {}
+    },
+    "TileEntity": {
+      "name": "akx",
+      "methods": {},
+      "fields": {
+        "c": "pos",
+        "b": "worldObj"
+      }
+    },
+    "EntitySnowGolem": {
+      "name": "tx",
+      "methods": {},
+      "fields": {}
+    },
+    "ResourceLocation": {
+      "name": "jz",
+      "methods": {},
+      "fields": {
+        "b": "resourcePath"
+      }
+    },
+    "EnchantmentHelper": {
+      "name": "acl",
+      "methods": {
+        "a(ILzy;)I": "getEnchantmentLevel"
+      },
+      "fields": {}
+    },
+    "FoodStats": {
+      "name": "xh",
+      "methods": {},
+      "fields": {
+        "b": "foodSaturationLevel",
+        "a": "foodLevel"
+      }
+    },
+    "WorldProviderHell": {
+      "name": "ano",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityAnimal": {
+      "name": "tn",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityBat": {
+      "name": "tl",
+      "methods": {},
+      "fields": {}
+    },
+    "GameRules": {
+      "name": "adl",
+      "methods": {
+        "a(Ljava/lang/String;Ljava/lang/String;)V": "setOrCreateGameRule",
+        "b()[Ljava/lang/String;": "getRules",
+        "a(Ljava/lang/String;)Ljava/lang/String;": "getGameRuleStringValue"
+      },
+      "fields": {}
+    },
+    "PlayerCapabilities": {
+      "name": "wm",
+      "methods": {},
+      "fields": {
+        "c": "allowFlying"
+      }
+    },
+    "Blocks": {
+      "name": "afj",
+      "methods": {
+        "a(Ljava/lang/String;)Lafi;": "getRegisteredBlock"
+      },
+      "fields": {}
+    },
+    "Potion": {
+      "name": "pf",
+      "methods": {
+        "b()Z": "isInstant"
+      },
+      "fields": {
+        "a": "potionTypes",
+        "M": "name",
+        "H": "id",
+        "I": "resourceToPotion"
+      }
+    },
+    "EntityEnderCrystal": {
+      "name": "ug",
+      "methods": {},
+      "fields": {}
+    },
+    "BiomeGenBase": {
+      "name": "adz",
+      "methods": {},
+      "fields": {
+        "an": "minHeight",
+        "aq": "rainFall",
+        "ao": "maxHeight",
+        "az": "biomeID",
+        "ap": "temperature",
+        "aE": "biomeList",
+        "ah": "biomeName"
+      }
+    },
+    "S2APacketParticles": {
+      "name": "gs",
+      "methods": {},
+      "fields": {}
+    },
+    "Rotations": {
+      "name": "dd",
+      "methods": {},
+      "fields": {
+        "a": "x",
+        "b": "y",
+        "c": "z"
+      }
+    },
+    "InventoryPlayer": {
+      "name": "wn",
+      "methods": {
+        "h()Lzy;": "getCurrentItem"
+      },
+      "fields": {
+        "a": "mainInventory",
+        "b": "armorInventory",
+        "c": "currentItem"
+      }
+    },
+    "EntitySilverfish": {
+      "name": "wa",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityLivingBase": {
+      "name": "ps",
+      "methods": {
+        "d(Lox;F)V": "damageEntity",
+        "bu()F": "getMaxHealth",
+        "c(Lpg;)V": "addPotionEffect",
+        "m(I)V": "removePotionEffect",
+        "K()V": "onEntityUpdate"
+      },
+      "fields": {
+        "g": "activePotions",
+        "aX": "lastDamage",
+        "f": "_combatTracker",
+        "bk": "lastAttacker",
+        "aD": "maxHurtResistantTime",
+        "c": "attributeMap"
+      }
+    },
+    "EntityAmbientCreature": {
+      "name": "tk",
+      "methods": {},
+      "fields": {}
+    },
+    "C07PacketPlayerDigging": {
+      "name": "is",
+      "methods": {},
+      "fields": {
+        "a": "position"
+      }
+    },
+    "EntityLiving": {
+      "name": "pt",
+      "methods": {
+        "a(Lpl;Z)V": "setLeashedToEntity"
+      },
+      "fields": {
+        "bp": "leashedToEntity",
+        "bl": "equipment",
+        "bo": "isLeashed",
+        "bm": "canPickUpLoot",
+        "bn": "persistenceRequired"
+      }
+    },
+    "EntityFlying": {
+      "name": "pr",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityWeatherEffect": {
+      "name": "uv",
+      "methods": {},
+      "fields": {}
+    },
+    "World": {
+      "name": "adn",
+      "methods": {
+        "b(Ladt;Lck;)I": "getLightFor",
+        "a(DDDLjava/lang/String;FF)V": "playSoundEffect",
+        "b(Lck;Lcr;)Z": "isFacePowered",
+        "b(Lck;)Ladz;": "getBiomeGenForCoords",
+        "d(Lpl;)Z": "spawnEntityInWorld",
+        "s(Lck;)Lakx;": "getTileEntity",
+        "z(Lck;)Z": "isPowered",
+        "p(Lck;)Lama;": "getBlockState",
+        "a(Lck;Lama;)Z": "setBlockState",
+        "A(Lck;)I": "isIndirectlyPowered"
+      },
+      "fields": {
+        "t": "provider",
+        "x": "worldInfo",
+        "v": "chunkProvider",
+        "N": "worldBorder",
+        "f": "loadedEntityList"
+      }
+    },
+    "S23PacketBlockChange": {
+      "name": "fw",
+      "methods": {},
+      "fields": {}
+    },
+    "Container": {
+      "name": "xj",
+      "methods": {},
+      "fields": {}
+    },
+    "BlockLiquid": {
+      "name": "ahw",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityGolem": {
+      "name": "tr",
+      "methods": {},
+      "fields": {}
+    },
+    "EntitySmallFireball": {
+      "name": "wx",
+      "methods": {
+        "a(Laui;)V": "onImpact"
+      },
+      "fields": {}
+    },
+    "WorldProvider": {
+      "name": "ann",
+      "methods": {
+        "e()Z": "canRespawnHere",
+        "k()Ljava/lang/String;": "getDimensionName",
+        "i()I": "getAverageGroundLevel"
+      },
+      "fields": {
+        "d": "isHellWorld",
+        "e": "hasNoSky",
+        "g": "dimensionId",
+        "c": "worldChunkMgr"
+      }
+    },
+    "Items": {
+      "name": "zz",
+      "methods": {
+        "a(Ljava/lang/String;)Lzx;": "getRegisteredItem"
+      },
+      "fields": {}
+    },
+    "BlockPos": {
+      "name": "ck",
+      "methods": {
+        "a(Lcr;I)Lck;": "offset"
+      },
+      "fields": {}
+    },
+    "EntityWolf": {
+      "name": "ub",
+      "methods": {},
+      "fields": {}
+    },
+    "DataWatcher$WatchableObject": {
+      "name": "qa$a",
+      "methods": {},
+      "fields": {
+        "c": "watchedObject"
+      }
+    },
+    "EntityAgeable": {
+      "name": "pi",
+      "methods": {
+        "a(Z)V": "setScaleForAge",
+        "l()I": "getGrowingAge",
+        "b(I)V": "setGrowingAge"
+      },
+      "fields": {}
+    },
+    "RegistryNamespaced": {
+      "name": "cy",
+      "methods": {
+        "c(Ljava/lang/Object;)Ljava/lang/Object;": "getNameForObject",
+        "b(Ljava/lang/Object;)I": "getIDForObject"
+      },
+      "fields": {}
+    },
+    "EntitySpider": {
+      "name": "wd",
+      "methods": {},
+      "fie>lds": {}
+    },
+    "Packet": {
+      "name": "fg",
+      "methods": {},
+      "fields": {}
+    },
+    "WorldProviderSurface": {
+      "name": "anp",
+      "methods": {},
+      "fields": {}
+    },
+    "ThreadQuickExitException": {
+      "name": "kj",
+      "methods": {},
+      "fields": {}
+    },
+    "EntitySlime": {
+      "name": "wc",
+      "methods": {
+        "a(I)V": "setSlimeSize"
+      },
+      "fields": {}
+    },
+    "EntityArmorStand": {
+      "name": "un",
+      "methods": {
+        "c(ILzy;)V": "setCurrentItemOrArmor",
+        "p(I)Lzy;": "getEquipmentInSlot"
+      },
+      "fields": {
+        "h": "canInteract"
+      }
+    },
+    "PropertyHelper": {
+      "name": "amk",
+      "methods": {},
+      "fields": {
+        "b": "name"
+      }
+    },
+    "Chunk": {
+      "name": "amz",
+      "methods": {},
+      "fields": {
+        "a": "xPosition",
+        "h": "isChunkLoaded",
+        "e": "blockBiomeArray",
+        "m": "entityLists",
+        "b": "zPosition",
+        "i": "worldObj"
+      }
+    },
+    "EnumDyeColor": {
+      "name": "ze",
+      "methods": {},
+      "fields": {
+        "t": "damage",
+        "u": "name"
+      }
+    },
+    "NetHandlerPlayServer": {
+      "name": "ln",
+      "methods": {
+        "a(Ljb;)V": "processPlayerBlockPlacement",
+        "a(Lig;)V": "processChatMessage",
+        "a(Liq;)V": "processPlayer",
+        "a(Lfg;)V": "sendPacket",
+        "a(Lis;)V": "processPlayerDigging"
+      },
+      "fields": {
+        "b": "playerEntity"
+      }
+    },
+    "DataWatcher": {
+      "name": "qa",
+      "methods": {
+        "j(I)Lqa$a;": "getWatchedObject",
+        "b(ILjava/lang/Object;)V": "updateObject"
+      },
+      "fields": {}
+    },
+    "EntityMob": {
+      "name": "vw",
+      "methods": {},
+      "fields": {}
+    },
+    "TileEntitySign": {
+      "name": "alo",
+      "methods": {},
+      "fields": {
+        "a": "signText"
+      }
+    },
+    "EntityChicken": {
+      "name": "to",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityCreeper": {
+      "name": "vo",
+      "methods": {
+        "cr()V": "detonate"
+      },
+      "fields": {
+        "a": "lastActiveTime",
+        "c": "fuseTime",
+        "b": "timeSinceIgnited",
+        "bm": "explosionRadius"
+      }
+    },
+    "Block": {
+      "name": "afi",
+      "methods": {
+        "c(Lama;)I": "getMetaFromState",
+        "d(I)Lama;": "getStateFromId",
+        "d()Z": "isSolidFullCube",
+        "a(I)Lama;": "getStateFromMeta",
+        "a(Ladn;Lck;)Z": "isReplaceable",
+        "f()Ljava/lang/String;": "getUnlocalizedName",
+        "f(Lama;)I": "getStateId"
+      },
+      "fields": {
+        "y": "enableStats",
+        "c": "blockRegistry",
+        "u": "lightValue",
+        "J": "blockMaterial",
+        "N": "defaultBlockState",
+        "w": "blockHardness",
+        "z": "needsRandomTick"
+      }
+    },
+    "IChatComponent$Serializer": {
+      "name": "ev$a",
+      "methods": {
+        "a(Lev;)Ljava/lang/String;": "componentToJson",
+        "a(Ljava/lang/String;)Lev;": "jsonToComponent"
+      },
+      "fields": {}
+    },
+    "DedicatedServer": {
+      "name": "kp",
+      "methods": {
+        "aP()V": "setGuiEnabled",
+        "i()Z": "startServer"
+      },
+      "fields": {}
+    },
+    "EntityPlayerMP": {
+      "name": "lg",
+      "methods": {
+        "a(Lox;)V": "onDeath"
+      },
+      "fields": {
+        "bI": "translator",
+        "a": "playerNetServerHandler"
+      }
+    },
+    "ItemInWorldManager": {
+      "name": "lh",
+      "methods": {
+        "b(Lck;)Z": "handleRightClick"
+      },
+      "fields": {
+        "b": "thisPlayerMP",
+        "a": "theWorld"
+      }
+    },
+    "Enchantment": {
+      "name": "acj",
+      "methods": {
+        "a(Lzy;)Z": "canApply",
+        "b(I)I": "getMaxEnchantability",
+        "b()I": "getMinLevel",
+        "a(I)I": "getMinEnchantability",
+        "b(Ljava/lang/String;)Lacj;": "getEnchantmentByLocation",
+        "e()I": "getMaxLevel",
+        "a(Lacj;)Z": "canApplyTogether"
+      },
+      "fields": {
+        "D": "name",
+        "F": "weight"
+      }
+    },
+    "EntityEnderman": {
+      "name": "vp",
+      "methods": {},
+      "fields": {}
+    },
+    "AnimalChest": {
+      "name": "xk",
+      "methods": {},
+      "fields": {}
+    },
+    "AxisAlignedBB": {
+      "name": "auh",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityCow": {
+      "name": "tp",
+      "methods": {},
+      "fields": {}
+    },
+    "PlayerProfileCache": {
+      "name": "lu",
+      "methods": {
+        "a(Ljava/util/UUID;)Lcom/mojang/authlib/GameProfile;": "getProfileByUUID"
+      },
+      "fields": {}
+    },
+    "EntityLargeFireball": {
+      "name": "wv",
+      "methods": {
+        "a(Laui;)V": "onImpact"
+      },
+      "fields": {
+        "e": "explosionSize"
+      }
+    },
+    "EntityPig": {
+      "name": "tu",
+      "methods": {},
+      "fields": {}
+    },
+    "WorldProviderEnd": {
+      "name": "anq",
+      "methods": {},
+      "fields": {}
+    },
+    "EntitySkeleton": {
+      "name": "wb",
+      "methods": {
+        "a(I)V": "setSkeletonType"
+      },
+      "fields": {}
+    },
+    "EntityGhast": {
+      "name": "vs",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityLightningBolt": {
+      "name": "uw",
+      "methods": {
+        "t_()V": "onUpdate"
+      },
+      "fields": {}
+    },
+    "EntitySquid": {
+      "name": "ty",
+      "methods": {},
+      "fields": {}
+    },
+    "S45PacketTitle$Type": {
+      "name": "hw$a",
+      "methods": {},
+      "fields": {}
+    },
+    "IChunkProvider": {
+      "name": "amw",
+      "methods": {
+        "d(II)Lamz;": "provideChunk",
+        "a(II)Z": "chunkExists"
+      },
+      "fields": {}
+    },
+    "JsonToNBT": {
+      "name": "ee",
+      "methods": {
+        "a(Ljava/lang/String;)Ldp;": "parseStringToTag"
+      },
+      "fields": {}
+    },
+    "WorldBorder": {
+      "name": "amt",
+      "methods": {
+        "h()D": "getDiameter",
+        "c(D)V": "setDamageAmount",
+        "c(I)V": "setWarningDistance",
+        "i()J": "getTimeRemaining",
+        "a(D)V": "setDiameter",
+        "a(DDJ)V": "setTargetAndTime",
+        "b(I)V": "setWarningTime",
+        "c(DD)V": "setCenter",
+        "b(D)V": "setDamageBuffer"
+      },
+      "fields": {
+        "e": "endDiameter",
+        "j": "damageBuffer",
+        "d": "startDiameter",
+        "c": "centerZ",
+        "b": "centerX",
+        "l": "warningDistance",
+        "g": "startTime",
+        "i": "damageAmount",
+        "f": "endTime",
+        "k": "warningTime"
+      }
+    },
+    "EntityPigZombie": {
+      "name": "vx",
+      "methods": {},
+      "fields": {
+        "bm": "angerLevel"
+      }
+    },
+    "Bootstrap": {
+      "name": "kc",
+      "methods": {
+        "c()V": "register"
+      },
+      "fields": {}
+    },
+    "ChunkProviderServer": {
+      "name": "le",
+      "methods": {
+        "b(II)V": "dropChunk"
+      },
+      "fields": {
+        "c": "droppedChunksSet"
+      }
+    },
+    "CombatTracker": {
+      "name": "ow",
+      "methods": {
+        "b()Lev;": "getDeathMessage"
+      },
+      "fields": {}
+    },
+    "PacketThreadUtil": {
+      "name": "fi",
+      "methods": {
+        "a(Lfg;Leq;Loe;)V": "processOnServerThread"
+      },
+      "fields": {}
+    },
+    "EntityWitch": {
+      "name": "we",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityItem": {
+      "name": "va",
+      "methods": {
+        "l()Lzy;": "getEntityItem"
+      },
+      "fields": {
+        "d": "delayBeforeCanPickup",
+        "f": "thrower",
+        "c": "age"
+      }
+    },
+    "C01PacketChatMessage": {
+      "name": "ig",
+      "methods": {},
+      "fields": {
+        "a": "message"
+      }
+    },
+    "Vec3i": {
+      "name": "dg",
+      "methods": {},
+      "fields": {
+        "a": "x",
+        "c": "y",
+        "d": "z"
+      }
+    },
+    "EntityArrow": {
+      "name": "wr",
+      "methods": {},
+      "fields": {
+        "at": "damage",
+        "c": "shootingEntity",
+        "au": "knockbackStrength"
+      }
+    },
+    "EntityThrowable": {
+      "name": "wz",
+      "methods": {
+        "n()Lps;": "getThrower"
+      },
+      "fields": {
+        "g": "thrower"
+      }
+    },
+    "MerchantRecipe": {
+      "name": "ada",
+      "methods": {},
+      "fields": {
+        "e": "maxUses",
+        "a": "firstItemToBuy",
+        "b": "secondItemToBuy",
+        "f": "grantExperience",
+        "c": "itemToSell",
+        "d": "uses"
+      }
+    },
+    "DamageSource": {
+      "name": "ox",
+      "methods": {
+        "i()Lpl;": "getSourceOfDamage",
+        "p()Ljava/lang/String;": "getDamageType"
+      },
+      "fields": {
+        "k": "generic"
+      }
+    },
+    "EnumArt": {
+      "name": "ur$a",
+      "methods": {},
+      "fields": {
+        "B": "name",
+        "C": "width",
+        "D": "height"
+      }
+    },
+    "StatCollector": {
+      "name": "dj",
+      "methods": {
+        "a(Ljava/lang/String;)Ljava/lang/String;": "translateToLocal"
+      },
+      "fields": {}
+    },
+    "Material": {
+      "name": "arn",
+      "methods": {
+        "c()Z": "blocksMovement"
+      },
+      "fields": {
+        "N": "requiresNoTool"
+      }
+    },
+    "EntityEndermite": {
+      "name": "vq",
+      "methods": {},
+      "fields": {
+        "b": "playerSpawned"
+      }
+    },
+    "EntityGiantZombie": {
+      "name": "vt",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityPainting": {
+      "name": "ur",
+      "methods": {},
+      "fields": {
+        "c": "art"
+      }
+    },
+    "MinecraftServer": {
+      "name": "net.minecraft.server.MinecraftServer",
+      "methods": {
+        "a(Lly;)V": "setConfigManager",
+        "s()V": "stopServer",
+        "z()V": "tick",
+        "C()V": "startServerThread",
+        "getServerModName()Ljava/lang/String;": "getServerModName"
+      },
+      "fields": {
+        "z": "onlineMode",
+        "Z": "playerCache",
+        "E": "motd",
+        "t": "hostname",
+        "aa": "serverThread",
+        "v": "serverConfigManager",
+        "d": "worldServers",
+        "u": "serverPort"
+      }
+    },
+    "BlockState": {
+      "name": "amb$a",
+      "methods": {},
+      "fields": {
+        "a": "block",
+        "b": "properties"
+      }
+    },
+    "EntityDragonPart": {
+      "name": "uf",
+      "methods": {},
+      "fields": {
+        "a": "entityDragonObj"
+      }
+    },
+    "EntityIronGolem": {
+      "name": "tz",
+      "methods": {},
+      "fields": {}
+    },
+    "S02PacketChat": {
+      "name": "fz",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityWaterMob": {
+      "name": "ua",
+      "methods": {},
+      "fields": {}
+    },
+    "EntityHanging": {
+      "name": "uo",
+      "methods": {
+        "a(Lcr;)V": "setFacing"
+      },
+      "fields": {
+        "b": "facing"
+      }
+    },
+    "EnumParticleTypes": {
+      "name": "cz",
+      "methods": {},
+      "fields": {}
+    },
+    "InventoryBasic": {
+      "name": "or",
+      "methods": {},
+      "fields": {
+        "c": "inventoryContents"
+      }
+    },
+    "EntityXPOrb": {
+      "name": "pq",
+      "methods": {},
+      "fields": {
+        "e": "xpValue"
+      }
+    },
+    "WorldChunkManager": {
+      "name": "aed",
+      "methods": {},
+      "fields": {}
+    },
+    "C00Handshake": {
+      "name": "jd",
+      "fields": {
+        "a": "protocolVersion",
+        "b": "ip",
+        "c": "port"
+      }
+    },
+    "ChatComponentText": {
+      "name": "fb"
+    },
+
+    "BaseAttributeMap": {
+      "name": "qg",
+      "methods": {
+        "a(Lqc;)Lqd;": "getAttributeInstance"
+      }
+    },
+    "BaseAttribute": {
+      "name": "qf"
+    },
+    "ModifiableAttributeInstance": {
+      "name": "qi",
+      "methods": {
+        "a(D)V": "setBaseValue",
+        "e()D": "getAttributeValue"
+      }
+    },
+    "MinecraftProtocolVersionIdentifier": {
+      "name": "jt$c",
+      "fields": {
+        "a": "name",
+        "b": "protocol"
+      }
+    },
+    "NetHandlerHandshakeTCP": {
+      "name": "lo",
+      "fields": {
+        "b": "networkManager"
+      },
+      "methods": {
+        "a(Ljd;)V": "processHandshake"
+      }
+    },
+    "NetworkManager": {
+      "name": "el",
+      "fields": {
+        "k": "socketAddress"
+      }
+    },
+    "EntityEnderPearl": {
+      "name": "xb"
+    },
+    "EntityFishHook": {
+      "name": "us",
+      "fields": {
+        "b": "angler",
+        "c": "caughtEntity"
+      }
+    },
+    "EntitySnowball": {
+      "name": "wy"
+    },
+    "EntityEnderEye": {
+      "name": "ws",
+      "fields": {
+        "a": "targetX",
+        "b": "targetY",
+        "c": "targetZ",
+        "e": "shatterOrDrop"
+      }
+    },
+    "EntityExpBottle": {
+      "name": "xc"
+    },
+    "EntityFireworkRocket": {
+      "name": "wu",
+      "fields": {
+        "b": "lifetime"
+      }
+    },
+    "EntityPotion": {
+      "name": "xd",
+      "fields": {
+        "c": "potionDamage"
+      }
+    },
+    "EntityWitherSkull": {
+      "name": "xe"
+    }
+  }
+}
