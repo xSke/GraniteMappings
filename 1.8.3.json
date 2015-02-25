@@ -15,7 +15,8 @@
         "a(Lox;F)Z": "attackEntityFrom",
         "aN()Z": "getAlwaysRenderNameTag",
         "a(DDD)V": "setPositionAndUpdate",
-        "az()I": "getAir"
+        "az()I": "getAir",
+        "t_()V": "onUpdate"
       },
       "fields": {
         "ac": "dataWatcher",
@@ -34,7 +35,11 @@
         "Z": "hurtResistantTime",
         "J": "width",
         "i": "fire",
-        "K": "height"
+        "K": "height",
+        "v": "motionX",
+        "w": "motionY",
+        "x": "motionZ",
+        "Y": "isInWater"
       }
     },
     "EntityMooshroom": {
@@ -919,9 +924,6 @@
     },
     "EntityLightningBolt": {
       "name": "uw",
-      "methods": {
-        "t_()V": "onUpdate"
-      },
       "fields": {}
     },
     "EntitySquid": {
@@ -1135,7 +1137,8 @@
         "s()V": "stopServer",
         "z()V": "tick",
         "C()V": "startServerThread",
-        "getServerModName()Ljava/lang/String;": "getServerModName"
+        "getServerModName()Ljava/lang/String;": "getServerModName",
+        "run()V": "run"
       },
       "fields": {
         "z": "onlineMode",
@@ -1222,7 +1225,6 @@
     "ChatComponentText": {
       "name": "fb"
     },
-
     "BaseAttributeMap": {
       "name": "qg",
       "methods": {
@@ -1272,9 +1274,6 @@
       "fields": {
         "b": "angler",
         "c": "caughtEntity"
-      },
-      "methods": {
-        "t_()V": "onUpdate"
       }
     },
     "EntitySnowball": {
@@ -1309,6 +1308,12 @@
     },
     "EntityWitherSkull": {
       "name": "xe"
+    },
+    "EntityBoat": {
+      "name": "uy",
+      "fields": {
+        "b": "speedMultiplier"
+      }
     }
   }
 }
