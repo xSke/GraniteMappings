@@ -1313,6 +1313,9 @@
       "name": "uy",
       "fields": {
         "b": "speedMultiplier"
+      },
+      "methods" : {
+        "t_()V": "onUpdate"
       }
     }
   }
