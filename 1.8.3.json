@@ -1317,6 +1317,62 @@
       "methods" : {
         "t_()V": "onUpdate"
       }
+    },
+    "BlockRailBase": {
+      "name": "aff",
+      "methods": {
+        "e(Ladn;Lck;)Z": "isOnRailWorld",
+        "d(Lama;)Z": "isOnRail"
+      }
+    },
+    "EntityMinecart": {
+      "name": "vb",
+      "methods": {
+        "m()D": "getMaxSpeed",
+        "n()V": "motionUpdate",
+        "o()V": "applyDrag"
+      }
+    },
+    "EntityMinecartChest": {
+      "name": "vc"
+    },
+    "EntityMinecartCommandBlock": {
+      "name": "vd",
+      "fields": {
+        "a": "commandLogic"
+      }
+    },
+    "EntityMinecartContainer": {
+      "name": "ve"
+    },
+    "EntityMinecartFurnace": {
+      "name": "vf",
+      "fields": {
+        "c": "fuel"
+      }
+    },
+    "EntityMinecartHopper": {
+      "name": "vg"
+    },
+    "EntityMinecartRideable": {
+      "name": "vh"
+    },
+    "EntityMinecartMobSpawner": {
+      "name": "vi"
+    },
+    "EntityMinecartTNT": {
+      "name": "vj",
+      "fields": {
+        "a": "fuse"
+      }
+    },
+    "CommandBlockLogic": {
+      "name": "add",
+      "fields": {
+        "b": "successCount",
+        "e": "commandStored",
+        "f": "customName"
+      }
     }
   }
 }
