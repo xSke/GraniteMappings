@@ -1,0 +1,30 @@
+{
+  "classes": {
+    "Entity": {
+      "name": "pl",
+      "methods": {
+        "a(Entity):void": "mountEntity"
+      },
+      "fields": {
+        "aq:java.util.UUID": "entityUUID",
+        "i:int": "fire",
+        "l:pl": "riddenByEntity",
+        "m:pl": "ridingEntity",
+        "o:adn": "world",
+        "s:double": "posX",
+        "t:double": "posY",
+        "u:double": "posZ",
+        "v:double": "motionX",
+        "w:double": "motionY",
+        "x:double": "motionZ",
+        "A:float": "rotationYaw",
+        "B:float": "rotationPitch",
+        "C:boolean": "onGround",
+        "I:boolean": "isDead",
+        "J:float": "width",
+        "K:float": "height",
+        "X:int": "fireResistance"
+      }
+    }
+  }
+}
