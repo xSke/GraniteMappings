@@ -1,5 +1,12 @@
 {
   "classes": {
+    "Bootstrap": {
+      "name": "kc",
+      "methods": {
+        "c():void": "register"
+      },
+      "fields": {}
+    },
     "Entity": {
       "name": "pl",
       "methods": {
