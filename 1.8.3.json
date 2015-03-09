@@ -12,7 +12,8 @@
     "Entity": {
       "name": "pl",
       "methods": {
-        "a(Entity):void": "mountEntity"
+        "a(Entity):void": "mountEntity",
+        "b(double,double,double,float,float):void": "setLocationAndAngles"
       },
       "fields": {
         "aq:java.util.UUID": "entityUniqueID",
