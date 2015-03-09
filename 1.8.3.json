@@ -58,6 +58,15 @@
     },
     "World": {
       "name": "adn"
+    },
+    "EntityPlayer": {
+      "name": "wo"
+    },
+    "EntityPlayerMP": {
+      "name": "lg"
+    },
+    "EntityLivingBase": {
+      "name": "ps"
     }
   }
 }
