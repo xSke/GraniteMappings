@@ -1,16 +1,25 @@
 {
   "classes": {
+    "Bootstrap": {
+      "name": "kc",
+      "methods": {
+        "c():void": "register"
+      }
+    },
+    "DedicatedServer": {
+      "name": "kp"
+    },
     "Entity": {
       "name": "pl",
       "methods": {
         "a(Entity):void": "mountEntity"
       },
       "fields": {
-        "aq:java.util.UUID": "entityUUID",
+        "aq:java.util.UUID": "entityUniqueID",
         "i:int": "fire",
-        "l:pl": "riddenByEntity",
-        "m:pl": "ridingEntity",
-        "o:adn": "world",
+        "l:Entity": "riddenByEntity",
+        "m:Entity": "ridingEntity",
+        "o:World": "worldObj",
         "s:double": "posX",
         "t:double": "posY",
         "u:double": "posZ",
@@ -25,6 +34,29 @@
         "K:float": "height",
         "X:int": "fireResistance"
       }
+    },
+    "MinecraftServer": {
+      "name": "net.minecraft.server.MinecraftServer",
+      "fields": {
+        "d:WorldServer[]": "worldServers",
+        "v:ServerConfigurationManager": "serverConfigManager",
+        "y:int": "tickCount",
+        "z:boolean": "onlineMode"
+      },
+      "methods": {
+        "s():void": "stopServer"
+      }
+    },
+    "ServerConfigurationManager": {
+      "name": "ly",
+      "fields": {
+        "e:int": "maxPlayers",
+        "i:java.util.List": "playerList",
+        "q:boolean": "whitelistEnforced"
+      }
+    },
+    "World": {
+      "name": "adn"
     }
   }
 }
