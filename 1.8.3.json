@@ -73,14 +73,13 @@
       "methods": {
         "a(IProperty,java.lang.Comparable):IBlockState": "withProperty",
         "a(IProperty):IBlockState": "cycleProperty"
-      },
-      "fields": {}
+      }
     },
     "BlockState$StateImplementation": {
       "name": "amb$a",
       "fields": {
         "a:Block": "block",
-        "b:ImmutableMap": "properties"
+        "b:com.google.common.collect.ImmutableMap": "properties"
       }
     },
     "IProperty": {
@@ -91,7 +90,38 @@
       }
     },
     "PropertyHelper": {
-      "name": "amk"
+      "name": "amk",
+      "fields": {
+        "b:java.lang.String": "name"
+      }
+    },
+    "RegistryNamespaced": {
+      "name": "cy",
+      "methods": {
+        "c(java.lang.Object):java.lang.Object": "getNameForObject"
+      }
+    },
+    "Block": {
+      "name": "afi",
+      "methods": {
+        "d():boolean": "isSolidFullCube"
+      },
+      "fields": {
+        "c:cp": "blockRegistry",
+        "N:IBlockState": "defaultBlockState",
+        "u:int": "lightValue",
+        "z:boolean": "needsRandomTick",
+        "y:boolean": "enableStats"
+      }
+    },
+    "RegistryNamespacedDefaultedByKey": {
+      "name": "cp"
+    },
+    "BlockFalling": {
+      "name": "ags"
+    },
+    "BlockLiquid": {
+      "name": "ahw"
     }
   }
 }
