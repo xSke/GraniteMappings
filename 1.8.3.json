@@ -67,6 +67,31 @@
     },
     "EntityLivingBase": {
       "name": "ps"
+    },
+    "IBlockState": {
+      "name": "ama",
+      "methods": {
+        "a(IProperty,java.lang.Comparable):IBlockState": "withProperty",
+        "a(IProperty):IBlockState": "cycleProperty"
+      },
+      "fields": {}
+    },
+    "BlockState$StateImplementation": {
+      "name": "amb$a",
+      "fields": {
+        "a:Block": "block",
+        "b:ImmutableMap": "properties"
+      }
+    },
+    "IProperty": {
+      "name": "amp",
+      "methods": {
+        "c():java.util.Collection": "getAllowedValues",
+        "a(java.lang.Comparable):String": "getName"
+      }
+    },
+    "PropertyHelper": {
+      "name": "amk"
     }
   }
 }
