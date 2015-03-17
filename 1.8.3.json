@@ -13,7 +13,8 @@
       "name": "pl",
       "methods": {
         "a(Entity):void": "mountEntity",
-        "b(double,double,double,float,float):void": "setLocationAndAngles"
+        "b(double,double,double,float,float):void": "setLocationAndAngles",
+        "d(DamageSource,float):void": "damageEntity"
       },
       "fields": {
         "aq:java.util.UUID": "entityUniqueID",
@@ -60,13 +61,42 @@
       "name": "adn"
     },
     "EntityPlayer": {
-      "name": "wo"
+      "name": "wo",
+      "fields": {
+        "bj:Container": "inventoryContainer",
+        "bk:Container": "openContainer",
+        "bl:FoodStats": "foodStats",
+        "bH:GameProfile": "gameProfile"
+      }
     },
     "EntityPlayerMP": {
-      "name": "lg"
+      "name": "lg",
+      "methods": {
+        "a(int,java.lang.String):boolean": "canCommandSenderUseCommand"
+      },
+      "fields": {
+        "bI:java.lang.String": "translator",
+        "a:NetHandlerPlayServer": "playerNetServerHandler"
+      }
     },
     "EntityLivingBase": {
-      "name": "ps"
+      "name": "ps",
+      "methods": {
+        "K():void": "onEntityUpdate",
+        "m(int):void": "removePotionEffect",
+        "bu():float": "getMaxHealth",
+        "c(PotionEffect):void": "addPotionEffect",
+        "a(IAttribute):IAttributeInstance": "getEntityAttribute",
+        "a(Potion):boolean": "isPotionActive",
+        "bl():java.util.Collection": "getActivePotionEffects"
+      },
+      "fields": {
+        "bk:EntityLivingBase": "lastAttacker",
+        "aX:float": "lastDamage",
+        "g:java.util.Map": "activePotions",
+        "c:BaseAttributeMap": "attributeMap",
+        "aD:int": "maxHurtResistantTime"
+      }
     },
     "IBlockState": {
       "name": "ama",
@@ -122,6 +152,53 @@
     },
     "BlockLiquid": {
       "name": "ahw"
+    },
+    "NetHandlerPlayServer": {
+      "name": "ln"
+    },
+    "GameProfile": {
+      "name": "com.mojang.authlib.GameProfile"
+    },
+    "Container": {
+      "name": "xj"
+    },
+    "FoodStats": {
+      "name": "xh",
+      "fields": {
+        "a:int": "foodLevel",
+        "b:float": "foodSaturationLevel"
+      }
+    },
+    "DataWatcher": {
+      "name": "qa",
+      "methods": {
+        "j(int):DataWatcher$WatchableObject": "getWatchedObject",
+        "b(int,java.lang.Object):void": "updateObject"
+      }
+    },
+    "DataWatcher$WatchableObject": {
+      "name": "qa$a",
+      "fields": {
+        "c:java.lang.Object": "watchedObject"
+      }
+    },
+    "IAttribute": {
+      "name": "qc"
+    },
+    "IAttributeInstance": {
+      "name": "qd",
+      "methods": {
+        "a(double):void": "setBaseValue"
+      }
+    },
+    "PotionEffect": {
+      "name": "pg"
+    },
+    "Potion": {
+      "name": "pf",
+      "fields": {
+        "H:int": "id"
+      }
     }
   }
 }
